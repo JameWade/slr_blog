@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from "astro:content";
+import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
+import Datetime from "@/components/Datetime.astro";
+
+export interface Props {
+  posts: CollectionEntry<"blog">[];
+}
+
+const { posts } = Astro.props as Props;
+---
+
+<section id="posts" class="pt-2">
+  <div class="mb-4 text-xl font-semibold tracking-wide">文章</div>
+  <ul class="space-y-3">
+    {posts.map(post => (
+      <li>
+        <a
+          href={post.slug ? `/posts/${post.slug}` : post.data?.canonicalURL ?? "#"}
+          class="group flex items-center justify-between rounded-xl border border-app-border/60 bg-app/30 px-4 py-3 transition-colors hover:bg-app/60"
+        >
+          <div class="flex min-w-0 items-center gap-3">
+            <span class="whitespace-nowrap rounded-full border border-app-border/60 px-2 py-0.5 text-2xs text-app-dim">
+              <Datetime datetime={post.data.modDatetime ?? post.data.pubDatetime} dateOnly />
+            </span>
+            <span class="truncate text-sm">{post.data.title}</span>
+          </div>
+          <IconChevronRight class="ms-3 shrink-0 stroke-2 transition-transform group-hover:translate-x-0.5 rtl:-rotate-180" />
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+

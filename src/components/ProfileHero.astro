@@ -1,0 +1,67 @@
+---
+import Socials from "@/components/Socials.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import { SITE } from "@/config";
+
+const profile = SITE.profileHero;
+---
+
+<section
+  id="hero"
+  class="pt-10 pb-8 text-center"
+>
+  {profile?.avatar && (
+    <img
+      src={profile.avatar}
+      alt={profile.name}
+      width={96}
+      height={96}
+      class="mx-auto mb-4 h-24 w-24 rounded-full border border-app-border object-cover shadow-sm"
+      loading="eager"
+    />
+  )}
+
+  {profile?.name && (
+    <h1 class="mb-2 text-3xl font-bold sm:text-4xl">{profile.name}</h1>
+  )}
+
+  {(profile?.location || profile?.githubUrl) && (
+    <div class="mb-3 flex items-center justify-center gap-2 text-xs">
+      {profile?.location && (
+        <span class="rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim">
+          {profile.location}
+        </span>
+      )}
+      {profile?.githubUrl && (
+        <a
+          href={profile.githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          class="rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim underline-offset-4 hover:text-accent"
+        >
+          我的GitHub
+        </a>
+      )}
+    </div>
+  )}
+
+  {profile?.intro && (
+    <p class="mx-auto max-w-3xl text-base text-app-dim">
+      {profile.intro}
+    </p>
+  )}
+
+  <div class="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
+    {profile?.contactHref && (
+      <LinkButton href={profile.contactHref}>
+        {profile.contactText ?? "空间内，与我取得联系"}
+      </LinkButton>
+    )}
+    <div class="flex items-center gap-2">
+      <span class="me-1 whitespace-nowrap text-sm text-app-dim">社交链接:</span>
+      <Socials />
+    </div>
+  </div>
+</section>
+
+

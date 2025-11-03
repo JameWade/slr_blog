@@ -20,4 +20,21 @@ export const SITE = {
   dir: "ltr", // "rtl" | "auto"
   lang: "en", // html lang code. Set this empty and default will be "en"
   timezone: "Asia/Bangkok", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  // Custom profile info for homepage hero
+  profileHero: {
+    // You can change these to your info
+    name: "zkslr",
+    avatar: "", // e.g. "/assets/avatar.jpg" (place under public/)
+    location: "",
+    githubUrl: "",
+    contactText: "关于我，或获取联系",
+    contactHref: "#about", // or external link to a contact page
+    intro:
+      "",
+  },
+  // Multi-paragraph about section on the homepage
+  profileAbout: [
+    "一名独立开发者，主要从事blockchain和crypto的学习研究工作",
+    "这个站点记录我在开发过程中的经验、坑点与思考。",
+  ],
 } as const;
