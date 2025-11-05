@@ -2,14 +2,20 @@
 import Socials from "@/components/Socials.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import { SITE } from "@/config";
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconLocation from "@/assets/icons/IconLocation.svg";
 
 const profile = SITE.profileHero;
 ---
 
 <section
   id="hero"
-  class="pt-10 pb-8 text-center"
+  class="relative overflow-hidden pt-12 pb-10 text-center"
 >
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-x-0 -top-24 z-[-1] h-64 bg-gradient-to-b from-app/40 to-transparent"
+  />
   {profile?.avatar && (
     <img
       src={profile.avatar}
@@ -22,13 +28,14 @@ const profile = SITE.profileHero;
   )}
 
   {profile?.name && (
-    <h1 class="mb-2 text-3xl font-bold sm:text-4xl">{profile.name}</h1>
+    <h1 class="mb-2 text-4xl font-bold tracking-wide sm:text-5xl">{profile.name}</h1>
   )}
 
   {(profile?.location || profile?.githubUrl) && (
     <div class="mb-3 flex items-center justify-center gap-2 text-xs">
       {profile?.location && (
-        <span class="rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim">
+        <span class="inline-flex items-center gap-1 rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim">
+          <IconLocation class="inline-block size-3 opacity-80" />
           {profile.location}
         </span>
       )}
@@ -37,31 +44,27 @@ const profile = SITE.profileHero;
           href={profile.githubUrl}
           target="_blank"
           rel="noreferrer"
-          class="rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim underline-offset-4 hover:text-accent"
+          class="inline-flex items-center gap-1 rounded-full border border-app-border/70 bg-app/40 px-2 py-0.5 text-app-dim underline-offset-4 hover:text-accent"
         >
+          <IconGitHub class="inline-block size-3 opacity-80" />
           我的GitHub
         </a>
       )}
     </div>
   )}
 
+  <div class="mb-3 flex items-center justify-center">
+    <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
+      <span class="inline-block size-2 rounded-full bg-emerald-400"></span>
+      空闲中，与我取得联系
+    </span>
+  </div>
+
   {profile?.intro && (
     <p class="mx-auto max-w-3xl text-base text-app-dim">
       {profile.intro}
     </p>
   )}
-
-  <div class="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
-    {profile?.contactHref && (
-      <LinkButton href={profile.contactHref}>
-        {profile.contactText ?? "空间内，与我取得联系"}
-      </LinkButton>
-    )}
-    <div class="flex items-center gap-2">
-      <span class="me-1 whitespace-nowrap text-sm text-app-dim">社交链接:</span>
-      <Socials />
-    </div>
-  </div>
 </section>
 
 

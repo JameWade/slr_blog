@@ -1,9 +1,9 @@
 export const SITE = {
   website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
+  author: "zkslr",
   profile: "https://satnaing.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "水良人的BLOG",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -24,10 +24,10 @@ export const SITE = {
   profileHero: {
     // You can change these to your info
     name: "zkslr",
-    avatar: "", // e.g. "/assets/avatar.jpg" (place under public/)
-    location: "",
-    githubUrl: "",
-    contactText: "关于我，或获取联系",
+    avatar: "/assets/slr.png", // e.g. "/assets/avatar.jpg" (place under public/)
+    location: "中国·山东·青岛",
+    githubUrl: "https://github.com/jamewade",
+    contactText: "关于我，获取联系",
     contactHref: "#about", // or external link to a contact page
     intro:
       "",

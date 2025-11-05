@@ -7,24 +7,33 @@ const aboutParas = SITE.profileAbout ?? [];
 ---
 
 <section id="about" class="app-prose mb-16 max-w-app">
-  <div class="mb-4 text-xl font-semibold tracking-wide">关于我</div>
-  <div class="text-sm text-app-dim">PHP 工程师 / 全栈开发</div>
+  <div class="flex items-start gap-4">
+    <div class="w-[120px] shrink-0 text-xl font-semibold tracking-wide text-white sm:w-[80px]">关于我</div>
 
-  {aboutParas.length > 0 ? (
-    <div class="mt-4 space-y-3">
-      {aboutParas.map(p => <p>{p}</p>)}
+    <div class="min-w-0 flex-1">
+      
+      {aboutParas.length > 0 ? (
+        <div class="space-y-2">
+          {aboutParas.map(p => <p class="text-app-dim">{p}</p>)}
+        </div>
+      ) : (
+        <p class="text-app-dim">
+          {profile?.intro ?? "这里是自我介绍。你可以在 src/config.ts 的 SITE.profileAbout 中配置多段文字。"}
+        </p>
+      )}
+{profile?.contactHref && (
+        <div class="mb-2 flex justify-end">
+          <a
+            href={profile.contactHref}
+            class="text-xs text-app-dim underline decoration-dashed underline-offset-4 hover:text-accent"
+          >
+            获取联系
+          </a>
+        </div>
+      )}
+      
     </div>
-  ) : (
-    <p class="mt-4">
-      {profile?.intro ?? "这里是自我介绍。你可以在 src/config.ts 的 SITE.profileAbout 中配置多段文字。"}
-    </p>
-  )}
-
-  {profile?.contactHref && (
-    <div class="mt-4">
-      <LinkButton href={profile.contactHref}>{profile.contactText ?? "更多关于我"}</LinkButton>
-    </div>
-  )}
+  </div>
 </section>
 
 

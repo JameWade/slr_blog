@@ -70,17 +70,17 @@ const isActive = (path: string) => {
         >
           <li class="col-span-2">
             <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-              Posts
+              文章
             </a>
           </li>
           <li class="col-span-2">
             <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-              Tags
+              项目
             </a>
           </li>
           <li class="col-span-2">
             <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
-              About
+              关于我
             </a>
           </li>
           {
@@ -98,13 +98,13 @@ const isActive = (path: string) => {
                   title="Archives"
                 >
                   <IconArchive class="hidden sm:inline-block" />
-                  <span class="sm:sr-only">Archives</span>
+                  <span class="sm:sr-only">归档</span>
                 </LinkButton>
               </li>
             )
           }
           <li class="col-span-1 flex items-center justify-center">
-            <LinkButton
+              <LinkButton
               href="/search"
               class:list={[
                 "focus-outline flex p-3 sm:p-1",
@@ -112,9 +112,9 @@ const isActive = (path: string) => {
               ]}
               ariaLabel="search"
               title="Search"
-            >
+              >
               <IconSearch />
-              <span class="sr-only">Search</span>
+              <span class="sr-only">搜索</span>
             </LinkButton>
           </li>
           {

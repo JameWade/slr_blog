@@ -1,0 +1,110 @@
+---
+import AboutLayout from "@/layouts/AboutLayout.astro";
+---
+
+<AboutLayout frontmatter={{ title: "关于我" }}>
+  <section id="about" class="mb-28 max-w-app">
+  <div class="not-prose grid gap-10 grid-cols-1 md:grid-cols-[1fr,260px] lg:grid-cols-[1fr,280px]">
+    <div class="md:col-start-1 min-w-0">
+      <div class="mt-8 grid gap-8">
+        <section id="about-intro" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
+          <h2 class="mb-3 text-xl font-semibold tracking-wide">关于我</h2>
+          <div class="space-y-3 text-[15px] leading-7 text-app-dim">
+            <p>一名独立开发者，主要使用 Go 与 rust 构建后端服务，也会用 Vue 写一点前端。</p>
+            <p>我喜欢把想法变成可以跑起来的代码，也喜欢研究系统背后的逻辑与工程细节。这个博客记录的是我在开发过程中的经验、坑点和一些思考。希望这些内容能帮到你，也欢迎交流。</p>
+            <p>如果你正在寻找一位技术合作者、远程开发者，或者只是想聊聊项目和代码，都可以随时联系我，交流总比独自摸索要有趣得多。</p>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a href="mailto:yourmail@gmail.com" class="rounded-md border border-app-border/60 bg-app/30 px-3 py-1.5 text-sm text-app-dim hover:bg-app/60">联系我</a>
+            <a href="#sponsor" class="rounded-md border border-app-border/60 bg-app/30 px-3 py-1.5 text-sm text-app-dim hover:bg-app/60">赞助我</a>
+          </div>
+        </section>
+        <section id="my-interests" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
+          <h2 class="mb-3 text-xl font-semibold tracking-wide">我的兴趣</h2>
+          <div class="text-app-dim">
+            <ul class="m-0 flex flex-col gap-2 list-none p-0 w-full min-w-0">
+              <li>玩游戏（PS5 / Switch，偏爱单机多一些）</li>
+              <li>写代码（Go / PHP / 前端折腾）</li>
+              <li>偶尔研究技术设计，记录点想法</li>
+              <li>享受安静的时间，也喜欢认识新朋友</li>
+            </ul>
+          </div>
+        </section>
+
+        
+
+        <section id="my-skills" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
+          <h2 class="mb-3 text-xl font-semibold tracking-wide">我的技能</h2>
+          <div class="mb-3 text-sm text-app-dim">能写前端、精通后端、搞得定运维，也会用 Go/Python 写点自动化脚本 —— 全栈打工侠认证 ✔️</div>
+          <div class="mb-2 text-sm">语言</div>
+          <div class="mb-4 flex flex-wrap gap-2">
+            {['HTML','CSS','JavaScript','TypeScript','PHP','Go','Python','SQL','Shell','Git'].map(s => (
+              <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
+            ))}
+          </div>
+          <div class="mb-2 text-sm">前端</div>
+          <div class="mb-4 flex flex-wrap gap-2">
+            {['Vite','Vue','Element','Naive UI','Vant'].map(s => (
+              <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
+            ))}
+          </div>
+          <div class="mb-2 text-sm">后端</div>
+          <div class="flex flex-wrap gap-2">
+            {['Gin','Laravel','ThinkPHP','Webman'].map(s => (
+              <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
+            ))}
+          </div>
+        </section>
+
+        <section id="stats" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
+          <h2 class="mb-3 text-xl font-semibold tracking-wide">访问统计</h2>
+          <div class="grid place-items-center rounded-xl border border-dashed border-app-border/60 bg-transparent p-8 text-app-dim w-full min-h-28">
+          <div>数据不重要，但我还是想看看</div>
+          <div class="mt-2 text-sm opacity-80">加载中...</div>
+          </div>
+        </section>
+      </div>
+      <div class="mt-8 text-xs text-app-dim">页面参考：<a class="underline decoration-dashed underline-offset-4 hover:text-accent" href="https://hejunjie.life/about/" target="_blank" rel="noreferrer">关于我</a></div>
+    </div>
+
+    <aside class="md:col-start-2">
+      <div class="sticky  rounded-xl border border-app-border/60 bg-app/30 p-3">
+        <div class="mb-2 text-sm font-semibold tracking-wide">目录</div>
+        <ul id="toc-links" class="m-0 list-none space-y-2 p-0 text-sm">
+          <li><a data-spy href="#my-interests" class="block rounded-lg px-3 py-2 text-app-dim hover:bg-app/50">我的兴趣</a></li>
+          <li><a data-spy href="#my-work" class="block rounded-lg px-3 py-2 text-app-dim hover:bg-app/50">我的工作</a></li>
+          <li><a data-spy href="#my-skills" class="block rounded-lg px-3 py-2 text-app-dim hover:bg-app/50">我的技能</a></li>
+          <li><a data-spy href="#stats" class="block rounded-lg px-3 py-2 text-app-dim hover:bg-app/50">访问统计</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  </section>
+</AboutLayout>
+
+<script>
+  const links = Array.from(document.querySelectorAll('#toc-links a[data-spy]')) as HTMLAnchorElement[];
+  const sections = links
+    .map(a => document.querySelector(a.getAttribute('href')!) as HTMLElement)
+    .filter(Boolean);
+
+  if (links.length && sections.length) {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          const id = `#${entry.target.id}`;
+          const link = links.find(a => a.getAttribute('href') === id);
+          if (!link) return;
+          if (entry.isIntersecting) {
+            links.forEach(l => l.classList.remove('bg-app/60','text-white'));
+            link.classList.add('bg-app/60','text-white');
+          }
+        });
+      },
+      { rootMargin: '-30% 0px -60% 0px', threshold: 0.1 }
+    );
+    sections.forEach(sec => observer.observe(sec));
+  }
+</script>
+
+

@@ -1,35 +1,51 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
-import Datetime from "@/components/Datetime.astro";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+import { SITE } from "@/config";
+import { getPath } from "@/utils/getPath";
 
 export interface Props {
   posts: CollectionEntry<"blog">[];
 }
 
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
 const { posts } = Astro.props as Props;
 ---
 
 <section id="posts" class="pt-2">
-  <div class="mb-4 text-xl font-semibold tracking-wide">文章</div>
-  <ul class="space-y-3">
-    {posts.map(post => (
-      <li>
-        <a
-          href={post.slug ? `/posts/${post.slug}` : post.data?.canonicalURL ?? "#"}
-          class="group flex items-center justify-between rounded-xl border border-app-border/60 bg-app/30 px-4 py-3 transition-colors hover:bg-app/60"
-        >
-          <div class="flex min-w-0 items-center gap-3">
-            <span class="whitespace-nowrap rounded-full border border-app-border/60 px-2 py-0.5 text-2xs text-app-dim">
-              <Datetime datetime={post.data.modDatetime ?? post.data.pubDatetime} dateOnly />
-            </span>
-            <span class="truncate text-sm">{post.data.title}</span>
-          </div>
-          <IconChevronRight class="ms-3 shrink-0 stroke-2 transition-transform group-hover:translate-x-0.5 rtl:-rotate-180" />
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div class="flex items-start gap-4">
+    <div class="w-[120px] shrink-0 text-xl font-semibold tracking-wide text-white sm:w-[80px]">文章</div>
+
+    <div class="min-w-0 flex-1">
+      <ul class="space-y-2">
+        {posts.map(post => (
+          <li>
+            <a
+              href={getPath(post.id, post.filePath)}
+              class="group flex items-center justify-between rounded-xl border border-app-border/60 bg-app/30 px-4 py-3 transition-colors hover:bg-app/60"
+            >
+              <div class="flex min-w-0 items-center gap-3">
+                <span class="whitespace-nowrap rounded-full border border-app-border/60 bg-app/40 px-2 py-0.5 text-2xs text-app-dim">
+                  {dayjs((post.data.modDatetime ?? post.data.pubDatetime) as any)
+                    .tz(SITE.timezone)
+                    .format("YYYY/MM/DD")}
+                </span>
+                <span class="truncate text-sm">{post.data.title}</span>
+              </div>
+              <span class="ms-3 grid size-6 place-items-center rounded-full border border-app-border/60 bg-app/40">
+                <IconChevronRight class="shrink-0 stroke-2 transition-transform group-hover:translate-x-0.5 rtl:-rotate-180" />
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 </section>
 
 
