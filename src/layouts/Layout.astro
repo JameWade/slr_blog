@@ -1,9 +1,8 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
-import { SITE } from "@/config";
+import { SITE, metrics } from "@/config";
 import "@/styles/global.css";
-
 export interface Props {
   title?: string;
   author?: string;
@@ -132,18 +131,17 @@ const structuredData = {
 
     <script is:inline src="/toggle-theme.js"></script>
 
-    {/** 51.la 统计脚本（按文章方案 LA.init） */}
-    {(() => {
-      const ID = "3NzIpWdZNGCuPxSJ"; // e.g. "xxxxxxxxxxxxxxxx"
-      const CK = "3NzIpWdZNGCuPxSJ"; // e.g. "yyyyyyyyyyyyyyyy"
-      const enabled = Boolean(ID && CK);
-      return import.meta.env.MODE !== "development" && enabled ? (
-        <>
-          <script id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js" defer></script>
-          <script is:inline>{`window.LA && window.LA.init({id: '${ID}', ck: '${CK}'});`}</script>
-        </>
-      ) : null;
-    })()}
+    {metrics.enable && <script is:inline src={metrics.sdk} />}
+    <script
+      is:inline
+      type="module"
+      data-astro-rerun
+      define:vars={{ metrics: metrics }}
+    >
+      if (metrics.enable) {
+        LA.init({ id: metrics.id, ck: metrics.ck });
+      }
+    </script>
   </head>
   <body>
     <slot />

@@ -38,3 +38,15 @@ export const SITE = {
     "这个站点记录我在开发过程中的经验、坑点与思考。",
   ],
 } as const;
+export const metrics: { enable: boolean; sdk: string; id: string; ck: string; widget: string } = {
+  // 51.la 统计开关
+  enable: true,
+  // 统计网站的配置信息，在后台获取
+  // See: https://v6.51.la/report/setup/params/statistics
+  sdk: 'https://sdk.51.la/js-sdk-pro.min.js',
+  id: '3NzIpWdZNGCuPxSJ',
+  ck: '3NzIpWdZNGCuPxSJ',
+  // 数据挂件 javascript 地址
+  // See: https://v6-widget.51.la/v6/xxxxxxxxxxxxxxxx/quote.js
+  widget: 'https://v6-widget.51.la/v6/3NzIpWdZNGCuPxSJ/quote.js'
+}
