@@ -44,9 +44,9 @@ export const metrics: { enable: boolean; sdk: string; id: string; ck: string; wi
   // 统计网站的配置信息，在后台获取
   // See: https://v6.51.la/report/setup/params/statistics
   sdk: 'https://sdk.51.la/js-sdk-pro.min.js',
-  id: '3NzIpWdZNGCuPxSJ',
-  ck: '3NzIpWdZNGCuPxSJ',
+  id: '3NzMNsUUPTi406g0',
+  ck: '3NzMNsUUPTi406g0',
   // 数据挂件 javascript 地址
   // See: https://v6-widget.51.la/v6/xxxxxxxxxxxxxxxx/quote.js
-  widget: 'https://v6-widget.51.la/v6/3NzIpWdZNGCuPxSJ/quote.js'
+  widget: 'https://v6-widget.51.la/v6/3NzMNsUUPTi406g0/quote.js'
 }
