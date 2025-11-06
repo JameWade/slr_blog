@@ -132,15 +132,15 @@ const structuredData = {
 
     <script is:inline src="/toggle-theme.js"></script>
 
-    {/** 51.la 统计脚本（当配置存在且启用时注入；开发环境禁用） */}
+    {/** 51.la 统计脚本（按文章方案 LA.init） */}
     {(() => {
-      // 使用 51.la 性能监控 SDK（LingQue.Monitor），只需填写 id 即可
-      const ID = "3NzIpWdZNGCuPxSJ"; // e.g. "3NzIpWdZNGCuPxSJ"
-      const enabled = Boolean(ID);
+      const ID = "3NzIpWdZNGCuPxSJ"; // e.g. "xxxxxxxxxxxxxxxx"
+      const CK = "3NzIpWdZNGCuPxSJ"; // e.g. "yyyyyyyyyyyyyyyy"
+      const enabled = Boolean(ID && CK);
       return import.meta.env.MODE !== "development" && enabled ? (
         <>
-          <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous" defer></script>
-          <script is:inline>{`window.LingQue && new LingQue.Monitor().init({id: '${ID}'});`}</script>
+          <script id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js" defer></script>
+          <script is:inline>{`window.LA && window.LA.init({id: '${ID}', ck: '${CK}'});`}</script>
         </>
       ) : null;
     })()}

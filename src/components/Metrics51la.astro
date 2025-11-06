@@ -17,8 +17,8 @@ const { compact = false, widget = "" } = Astro.props as Props;
   </div>
 )}
 
-<script is:inline data-astro-rerun>
-  const widgetUrl = typeof '{widget}' === 'string' ? '{widget}' : "";
+<script is:inline type="module" data-astro-rerun define:vars={{ widget }}>
+  const widgetUrl = typeof widget === 'string' ? widget : "";
   const titles = [
     "最近活跃",
     "今日人数",
