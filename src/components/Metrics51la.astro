@@ -1,0 +1,72 @@
+---
+export interface Props { compact?: boolean; widget?: string }
+const { compact = false, widget = "" } = Astro.props as Props;
+---
+
+{!compact && (
+  <div class="mt-6 rounded-xl border border-app-border/60 bg-app/30 p-4">
+    <div class="mb-3 text-sm font-semibold tracking-wide">站点访问统计</div>
+    <div id="la-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-4"></div>
+    <div id="la-note" class="mt-2 text-2xs text-app-dim">数据来自 51.la</div>
+  </div>
+)}
+{compact && (
+  <div>
+    <div id="la-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-4"></div>
+    <div id="la-note" class="mt-2 text-2xs text-app-dim">数据来自 51.la</div>
+  </div>
+)}
+
+<script is:inline data-astro-rerun>
+  const widgetUrl = typeof '{widget}' === 'string' ? '{widget}' : "";
+  const titles = [
+    "最近活跃",
+    "今日人数",
+    "今日访问",
+    "昨日人数",
+    "昨日访问",
+    "本月访问",
+    "总访问量",
+  ];
+
+  const grid = document.getElementById("la-grid");
+  const note = document.getElementById("la-note");
+
+  async function loadMetrics() {
+    if (!widgetUrl) {
+      note && (note.textContent = "未配置 PUBLIC_51LA_WIDGET，无法获取 51.la 数据");
+      return;
+    }
+
+    try {
+      const res = await fetch(widgetUrl);
+      const text = await res.text();
+
+      // 解析 quote.js 文本中的数字项
+      let matches = text.match(/(<\/span><span>).*?(\/span><\/p>)/g);
+      if (!matches) {
+        note && (note.textContent = "未能解析 51.la 数据（widget 结构可能已变更）");
+        return;
+      }
+      const nums = matches.map(s => s.replace(/(<\/span><span>|<\/span><\/p>)/g, ""));
+
+      // 渲染卡片
+      const items = titles.map((t, i) => ({ title: t, value: nums[i] ?? "—" }));
+      grid.innerHTML = items
+        .map(
+          i => `
+        <div class="rounded-lg border border-app-border/60 bg-background/60 p-3">
+          <div class="text-2xs text-app-dim">${i.title}</div>
+          <div class="mt-1 text-lg font-bold">${i.value}</div>
+        </div>`
+        )
+        .join("");
+    } catch (e) {
+      note && (note.textContent = "获取 51.la 数据失败");
+    }
+  }
+
+  loadMetrics();
+</script>
+
+

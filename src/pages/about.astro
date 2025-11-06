@@ -1,5 +1,6 @@
 ---
 import AboutLayout from "@/layouts/AboutLayout.astro";
+import Metrics51la from "@/components/Metrics51la.astro";
 ---
 
 <AboutLayout frontmatter={{ title: "关于我" }}>
@@ -58,10 +59,8 @@ import AboutLayout from "@/layouts/AboutLayout.astro";
 
         <section id="stats" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
           <h2 class="mb-3 text-xl font-semibold tracking-wide">访问统计</h2>
-          <div class="grid place-items-center rounded-xl border border-dashed border-app-border/60 bg-transparent p-8 text-app-dim w-full min-h-28">
-          <div>数据不重要，但我还是想看看</div>
-          <div class="mt-2 text-sm opacity-80">加载中...</div>
-          </div>
+          {/** 直接填写 51.la widget 地址 */}
+          <Metrics51la compact={true} widget="" />
         </section>
       </div>
       <div class="mt-8 text-xs text-app-dim">页面参考：<a class="underline decoration-dashed underline-offset-4 hover:text-accent" href="https://hejunjie.life/about/" target="_blank" rel="noreferrer">关于我</a></div>
