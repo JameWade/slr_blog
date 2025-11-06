@@ -142,9 +142,23 @@ const structuredData = {
         LA.init({ id: metrics.id, ck: metrics.ck });
       }
     </script>
+
+<!-- 播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
   </head>
   <body>
     <slot />
+    <meting-js
+    server="netease"
+    type="playlist"
+    id="503838841"
+    fixed="true"
+    autoplay="false"
+    theme="#ff4e50"
+></meting-js>
   </body>
 </html>
 
