@@ -11,9 +11,9 @@ import Metrics51la from "@/components/Metrics51la.astro";
         <section id="about-intro" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
           <h2 class="mb-3 text-xl font-semibold tracking-wide">关于我</h2>
           <div class="space-y-3 text-[15px] leading-7 text-app-dim">
-            <p>一名独立开发者，主要使用 Go 与 rust 构建后端服务，也会用 Vue 写一点前端。</p>
-            <p>我喜欢把想法变成可以跑起来的代码，也喜欢研究系统背后的逻辑与工程细节。这个博客记录的是我在开发过程中的经验、坑点和一些思考。希望这些内容能帮到你，也欢迎交流。</p>
-            <p>如果你正在寻找一位技术合作者、远程开发者，或者只是想聊聊项目和代码，都可以随时联系我，交流总比独自摸索要有趣得多。</p>
+            <p>一名热爱编程的开发者，工作中主要使用java和kotlin编写安卓app，业余时间主要使用 Go 与 rust 构建后端服务，也会用 Vue 和 nextjs 写一点前端。</p>
+            <p>工作以外我一直在币圈摸金，写过solidity合约、cairo合约；在defi和meme中来回横跳，也研究过defi协议和meme的玩法。</p>
+            <p>钟爱密码学，学过零知识证明和同态加密，研究过zkvm，zk-rollup等。坚信密码学会重铸信用体系。</p>
           </div>
           <div class="mt-4 flex gap-3">
             <a href="mailto:yourmail@gmail.com" class="rounded-md border border-app-border/60 bg-app/30 px-3 py-1.5 text-sm text-app-dim hover:bg-app/60">联系我</a>
@@ -24,10 +24,11 @@ import Metrics51la from "@/components/Metrics51la.astro";
           <h2 class="mb-3 text-xl font-semibold tracking-wide">我的兴趣</h2>
           <div class="text-app-dim">
             <ul class="m-0 flex flex-col gap-2 list-none p-0 w-full min-w-0">
-              <li>玩游戏（PS5 / Switch，偏爱单机多一些）</li>
-              <li>写代码（Go / PHP / 前端折腾）</li>
-              <li>偶尔研究技术设计，记录点想法</li>
-              <li>享受安静的时间，也喜欢认识新朋友</li>
+              <li>打篮球（最爱，但是已经跳不起来了）</li>
+              <li>玩游戏（LOL骨灰级黑铁玩家、dota2爱好者）</li>
+              <li>写代码（java / kotlin /Go / rust / 前端折腾）</li>
+              <li>爱研究，好折腾，喜欢和不同的朋友交流讨论</li>
+              <li>顶级宅男，但是也想认识更多热爱技术的朋友</li>
             </ul>
           </div>
         </section>
@@ -36,22 +37,21 @@ import Metrics51la from "@/components/Metrics51la.astro";
 
         <section id="my-skills" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
           <h2 class="mb-3 text-xl font-semibold tracking-wide">我的技能</h2>
-          <div class="mb-3 text-sm text-app-dim">能写前端、精通后端、搞得定运维，也会用 Go/Python 写点自动化脚本 —— 全栈打工侠认证 ✔️</div>
           <div class="mb-2 text-sm">语言</div>
           <div class="mb-4 flex flex-wrap gap-2">
-            {['HTML','CSS','JavaScript','TypeScript','PHP','Go','Python','SQL','Shell','Git'].map(s => (
+            {['JavaScript','TypeScript','Go','rust','java','kotlin','Shell'].map(s => (
               <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
             ))}
           </div>
           <div class="mb-2 text-sm">前端</div>
           <div class="mb-4 flex flex-wrap gap-2">
-            {['Vite','Vue','Element','Naive UI','Vant'].map(s => (
+            {['Vite','Vue','nextJS','TailwindCSS','Android'].map(s => (
               <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
             ))}
           </div>
-          <div class="mb-2 text-sm">后端</div>
+          <div class="mb-2 text-sm">区块链</div>
           <div class="flex flex-wrap gap-2">
-            {['Gin','Laravel','ThinkPHP','Webman'].map(s => (
+            {['solidity','cairo','zkvm','zk-rollup','fhe'].map(s => (
               <span class="rounded-full border border-app-border/60 bg-app/30 px-3 py-1 text-xs text-app-dim">{s}</span>
             ))}
           </div>
@@ -59,7 +59,6 @@ import Metrics51la from "@/components/Metrics51la.astro";
 
         <section id="stats" class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
           <h2 class="mb-3 text-xl font-semibold tracking-wide">访问统计</h2>
-          {/** 直接填写 51.la widget 地址 */}
           <Metrics51la/>
         </section>
       </div>
