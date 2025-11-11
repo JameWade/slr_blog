@@ -1,4 +1,4 @@
----
+  ---
 import { metrics } from '@/config'
 ---
 
@@ -27,12 +27,23 @@ import { metrics } from '@/config'
           '总访问量'
         ]
         const container = document.getElementById('widget')
-        let html = ''
-        for (let i = 0; i < num.length; i++) {
-          html += `<div>标题：${titles[i]}</div>`
-          html += `<div>内容：${num[i]}</div>`
-        }
-        container.innerHTML = html
+        if (!container) return
+
+        // 容器样式：与站点风格一致的卡片网格
+        container.className = 'not-prose grid grid-cols-2 gap-3 sm:grid-cols-4'
+
+        // 生成卡片
+        const cards = titles.map((title, i) => {
+          const value = num[i] ?? '—'
+          return `
+            <div class="rounded-lg border border-app-border/60 bg-background/60 p-3">
+              <div class="text-2xs text-app-dim">${title}</div>
+              <div class="mt-1 text-lg font-bold">${value}</div>
+            </div>
+          `
+        }).join('')
+
+        container.innerHTML = cards
       })
       .catch((err) => {
         console.error('51.la 数据获取失败:', err)
