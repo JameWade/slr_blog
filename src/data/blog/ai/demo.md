@@ -6,7 +6,7 @@ featured: false
 draft: false
 tags:
   - ai
-这是一篇文章翻译，原文链接[I Reverse Engineered ChatGPT's Memory System, and Here's What I Found!](https://manthanguptaa.in/posts/chatgpt_memory/)
+description: 这是一篇文章翻译，原文链接[I Reverse Engineered ChatGPT's Memory System, and Here's What I Found!](https://manthanguptaa.in/posts/chatgpt_memory/)
 ---
 
 
