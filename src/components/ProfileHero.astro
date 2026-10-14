@@ -14,7 +14,7 @@ const profile = SITE.profileHero;
 >
   <div
     aria-hidden="true"
-    class="pointer-events-none absolute inset-x-0 -top-24 z-[-1] h-64 bg-gradient-to-b from-app/40 to-transparent"
+    class="pointer-events-none absolute inset-x-0 -top-24 z-[-1] h-80 bg-gradient-to-b from-accent/15 via-accent/5 to-transparent"
   />
   {profile?.avatar && (
     <img
@@ -22,13 +22,17 @@ const profile = SITE.profileHero;
       alt={profile.name}
       width={96}
       height={96}
-      class="mx-auto mb-4 h-24 w-24 rounded-full border border-app-border object-cover shadow-sm"
+      class="mx-auto mb-4 h-24 w-24 rounded-full border border-app-border object-cover shadow-sm ring-2 ring-accent/40 ring-offset-2 ring-offset-background"
       loading="eager"
     />
   )}
 
   {profile?.name && (
     <h1 class="mb-2 text-4xl font-bold tracking-wide sm:text-5xl">{profile.name}</h1>
+  )}
+
+  {profile?.tagline && (
+    <p class="mb-3 text-sm font-medium tracking-wide text-accent">{profile.tagline}</p>
   )}
 
   {(profile?.location || profile?.githubUrl) && (
