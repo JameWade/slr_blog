@@ -1,8 +1,8 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://blog.zkslr.shop",
   author: "zkslr",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  profile: "https://github.com/JameWade",
+  desc: "水良人的个人博客，记录区块链、密码学与 AI 的学习笔记",
   title: "水良人的BLOG",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
@@ -14,12 +14,12 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/JameWade/slr_blog/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  timezone: "Asia/Bangkok", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  lang: "zh-CN",
+  timezone: "Asia/Shanghai",
   // Custom profile info for homepage hero
   profileHero: {
     // You can change these to your info

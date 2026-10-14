@@ -1,12 +1,12 @@
 ---
 author: zkslr
 pubDatetime: 2025-11-05T10:01:00.000+08:00
-title: 密码学 · Demo
+title: 零知识证明学习笔记：数论基础
 featured: false
 draft: false
 tags:
   - cryptography
-description: 密码学分类的示例文章，用于测试分类与导航。
+description: 零知识证明的数学基础总结：从数论、模运算到欧拉函数，持续更新中。
 ---
 
 这是零知识证明从数学基础到基本算法的一个总结，我很久没看了，准备从头看一遍，会持续更新。

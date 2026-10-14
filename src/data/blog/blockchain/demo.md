@@ -56,7 +56,7 @@ Searchers 会持续在链上或在去中心化订单流市场（例如 [DFLow](h
 直到最近，这些生态参与者一直以模块化 MEV 基础设施提供者的形式协同运作。
 然而，随着 MEV 可捕获空间的增长，我们预期 MEV 基础设施将出现整合趋势，以便在价值链的每一个环节上提升价值捕获能力。
 
-![mev_1](/public/assets/value-flows-in-the-mev-ecosystem/mev_1.png)
+![mev_1](/assets/value-flows-in-the-mev-ecosystem/mev_1.png)
 
 Jito Labs 正在 Solana 上构建这一体系的首个完整实现。我们在 2021 年 8 月对其进行了投资，而今天 Jito 基金会上线了质押池，使其 MEV 基础设施成为首个将 block builder 与质押池集成在一起的系统。
 他们还开源了自己的验证者客户端（Jito-Solana），以便验证者更容易参与到该系统中。
@@ -64,7 +64,7 @@ Jito Labs 正在 Solana 上构建这一体系的首个完整实现。我们在 2
 Jito Block Engine 支持链下区块空间拍卖，而 Jito 质押池及其流动性质押衍生品（JITO-SOL）共同构建了一个集成系统，从而提升整体效率，并因此提高质押者的收益。
 
 
-![jito](/public/assets/value-flows-in-the-mev-ecosystem/jito.png)
+![jito](/assets/value-flows-in-the-mev-ecosystem/jito.png)
 
 # MEV 价值累积
 在权益证明系统中，MEV 的市场结构显示价值将累积在两个层面：
