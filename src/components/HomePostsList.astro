@@ -37,9 +37,10 @@ const { posts } = Astro.props as Props;
               >
                 <div class="min-w-0 flex-1">
                   <div class="truncate text-[15px] font-medium">{post.data.title}</div>
-                  <div class="mt-1 flex flex-wrap items-center gap-x-1.5 text-xs text-app-dim">
-                    <span>{date}</span>
-                    <span aria-hidden="true">·</span>
+                  <div class="mt-1 flex flex-wrap items-center gap-x-2 text-xs text-app-dim">
+                    <span class="whitespace-nowrap rounded-full border border-app-border/60 bg-app/40 px-2 py-0.5 text-2xs">
+                      {date}
+                    </span>
                     <span>约 {minutes} 分钟</span>
                     <span class="ms-auto flex items-center gap-x-1.5">
                       {post.data.tags.slice(0, 3).map(tag => (
