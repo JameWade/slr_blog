@@ -24,6 +24,7 @@ export const SITE = {
   profileHero: {
     // You can change these to your info
     name: "zkslr",
+    tagline: "在区块链、密码学与 AI 的世界里做笔记",
     avatar: "/assets/slr.png", // e.g. "/assets/avatar.jpg" (place under public/)
     location: "中国·山东·青岛",
     githubUrl: "https://github.com/jamewade",
