@@ -258,7 +258,7 @@ const nextPost =
    * allowing users to copy code easily. */
   function attachCopyButtons() {
     const copyButtonLabel = "Copy";
-    const codeBlocks = Array.from(document.querySelectorAll("pre"));
+    const codeBlocks = Array.from(document.querySelectorAll("pre:not(.mermaid)"));
 
     for (const codeBlock of codeBlocks) {
       const wrapper = document.createElement("div");
@@ -309,4 +309,77 @@ const nextPost =
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
+</script>
+
+<script is:inline data-astro-rerun>
+  /** Render ```mermaid code blocks as diagrams (client-side, lazy-loaded) */
+  async function renderMermaidDiagrams() {
+    if (!document.querySelector("pre.mermaid")) return;
+
+    let mermaid;
+    try {
+      const mod = await import(
+        "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs"
+      );
+      mermaid = mod.default;
+    } catch {
+      return; // CDN 不可用时保留代码原文
+    }
+
+    function setup() {
+      const dark = document.documentElement.dataset.theme === "dark";
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: dark ? "dark" : "default",
+        fontFamily:
+          '"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif',
+        themeVariables: dark
+          ? {
+              primaryColor: "#5aa9e6",
+              primaryBorderColor: "#5aa9e6",
+              lineColor: "#8a8a8a",
+              primaryTextColor: "#e8e6e3",
+            }
+          : {
+              primaryColor: "#006cac",
+              primaryBorderColor: "#006cac",
+              lineColor: "#6b6b6b",
+              primaryTextColor: "#282728",
+            },
+      });
+    }
+
+    async function draw() {
+      setup();
+      const els = document.querySelectorAll("pre.mermaid");
+      for (let i = 0; i < els.length; i++) {
+        const el = els[i];
+        // 首次渲染前存下源码，供主题切换时重绘
+        if (!el.dataset.mermaidCode) el.dataset.mermaidCode = el.textContent ?? "";
+        try {
+          const { svg } = await mermaid.render(
+            `mermaid-svg-${i}`,
+            el.dataset.mermaidCode
+          );
+          el.innerHTML = svg;
+        } catch {
+          // 语法错误时保留原文，方便排查
+        }
+      }
+    }
+
+    await draw();
+
+    // 跟随深浅色切换重绘（整站只注册一次）
+    if (!window.__mermaidThemeWatcher) {
+      window.__mermaidThemeWatcher = new MutationObserver(() => {
+        draw();
+      });
+      window.__mermaidThemeWatcher.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-theme"],
+      });
+    }
+  }
+  renderMermaidDiagrams();
 </script>
