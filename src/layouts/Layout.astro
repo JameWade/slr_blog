@@ -146,22 +146,62 @@ const structuredData = {
 <!-- KaTeX for math rendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous" />
 
-<!-- 播放器 -->
+<!-- 播放器样式（APlayer 本体） -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 
   </head>
   <body>
     <slot />
-    <meting-js
-    server="netease"
-    type="playlist"
-    id="503838841"
-    fixed="true"
-    autoplay="false"
-    theme="#ff4e50"
-></meting-js>
+    <!-- 音乐播放器：APlayer 直读站内静态歌单（不再依赖已失效的 Meting API） -->
+    <div id="aplayer"></div>
+    <script is:inline data-astro-rerun>
+      (function () {
+        if (window.__sitePlayer || !window.APlayer) return;
+        Promise.all(
+          ["/playlist-1.json", "/playlist-2.json"].map(function (u) {
+            return fetch(u).then(function (r) { return r.json(); });
+          })
+        )
+          .then(function (parts) {
+            var audio = [].concat.apply([], parts);
+            if (!audio.length) return;
+            var accent = function () {
+              return (
+                getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() ||
+                "#006cac"
+              );
+            };
+            var ap = new APlayer({
+              container: document.getElementById("aplayer"),
+              fixed: true,
+              autoplay: false,
+              theme: accent(),
+              loop: "all",
+              order: "list",
+              preload: "none",
+              volume: 0.7,
+              listMaxHeight: "320px",
+              lrcType: 0,
+              audio: audio,
+            });
+            window.__sitePlayer = ap;
+            // 跟随深浅主题切换品牌色
+            new MutationObserver(function () { ap.theme(accent()); }).observe(
+              document.documentElement,
+              { attributes: true, attributeFilter: ["data-theme"] }
+            );
+            // 失效的音频自动跳过（连续失败过多则停下）
+            var errCount = 0;
+            ap.audio.addEventListener("error", function () {
+              errCount += 1;
+              if (errCount < 20) ap.skipForward();
+            });
+            ap.on("play", function () { errCount = 0; });
+          })
+          .catch(function () {});
+      })();
+    </script>
   </body>
 </html>
 
