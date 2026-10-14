@@ -44,7 +44,9 @@ const { posts } = Astro.props as Props;
                     <span>约 {minutes} 分钟</span>
                     <span class="ms-auto flex items-center gap-x-1.5">
                       {post.data.tags.slice(0, 3).map(tag => (
-                        <span>#{tag}</span>
+                        <span class="whitespace-nowrap rounded-full border border-accent/30 px-2 py-px text-2xs text-accent">
+                          #{tag}
+                        </span>
                       ))}
                     </span>
                   </div>
