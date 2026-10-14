@@ -41,9 +41,11 @@ const { posts } = Astro.props as Props;
                     <span>{date}</span>
                     <span aria-hidden="true">·</span>
                     <span>约 {minutes} 分钟</span>
-                    {post.data.tags.slice(0, 3).map(tag => (
-                      <span>#{tag}</span>
-                    ))}
+                    <span class="ms-auto flex items-center gap-x-1.5">
+                      {post.data.tags.slice(0, 3).map(tag => (
+                        <span>#{tag}</span>
+                      ))}
+                    </span>
                   </div>
                   {post.data.description && (
                     <p class="mt-1 truncate text-sm text-app-dim">{post.data.description}</p>
