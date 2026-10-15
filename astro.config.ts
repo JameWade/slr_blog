@@ -11,6 +11,7 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import { remarkMermaid } from "./src/utils/remarkMermaid";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
@@ -22,7 +23,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }], remarkMath],
+    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }], remarkMath, remarkMermaid],
     rehypePlugins: [rehypeKatex],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes

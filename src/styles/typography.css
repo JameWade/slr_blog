@@ -116,4 +116,13 @@
       @apply rounded-sm border border-border px-0.5 py-px;
     }
   }
+
+  /* ===== Mermaid diagrams ===== */
+  pre.mermaid {
+    @apply mx-auto my-6 max-w-full overflow-x-auto bg-transparent p-2 text-center;
+  }
+
+  pre.mermaid svg {
+    @apply mx-auto h-auto max-w-full;
+  }
 }
