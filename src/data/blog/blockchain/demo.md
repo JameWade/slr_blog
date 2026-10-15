@@ -49,6 +49,23 @@ Searchers 会持续在链上或在去中心化订单流市场（例如 [DFLow](h
 因此，质押池会实质性地要求验证者从最有效率的 block builders 获取区块，以最大化构成质押池的质押者的收益。
 同时，block builders 也被激励去构建利润最高的区块，因为他们希望有更多验证者采用他们构建的区块，从而提高自身的成功率，并可能提升其在 MEV 收益中的分成比例。
 
+下图总结了上述价值流动：
+
+```mermaid
+flowchart TD
+    searcher[Searchers<br/>发现并捕获链上 MEV 机会]
+    builder[Block Builders<br/>Jito / Flashbots<br/>构建利润最高的区块]
+    validator[验证者（提议者）<br/>提议区块、参与共识]
+    pool[质押池<br/>Lido / Jito / Marinade<br/>聚合质押、分配奖励]
+    staker[质押者<br/>获得有竞争力的质押奖励]
+
+    searcher -->|提交优化交易 + 小费| builder
+    builder -->|最高利润的区块| validator
+    validator -->|MEV 收益回流| pool
+    pool -->|发放质押奖励| staker
+    pool -.->|委托质押给高效验证者| validator
+```
+
 在权益证明网络中，占据主导地位的质押池通常会提供流动性质押衍生品（LSD）（例如 Jito 的 jitoSOL、Lido 的 stETH、Coinbase 的 cbETH）。这些代币代表对原始质押资产的 1:1 索取权，并会自动累积所有质押奖励。
 推出质押衍生品的动机在于同时提升 资本效率 和 质押分布的去中心化程度。
 
