@@ -11,9 +11,15 @@ import { SITE } from "@/config";
 const posts = await getCollection("blog");
 
 let tags = getUniqueTags(posts);
+
+// JSON-LD ItemList：标签集合
+const itemList = tags.map(({ tag, tagName }) => ({
+  name: tagName,
+  url: new URL(`/tags/${tag}/`, Astro.site ?? SITE.website).href,
+}));
 ---
 
-<Layout title={`Tags | ${SITE.title}`}>
+<Layout title={`Tags | ${SITE.title}`} itemList={itemList}>
   <Header />
   <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
     <ul>

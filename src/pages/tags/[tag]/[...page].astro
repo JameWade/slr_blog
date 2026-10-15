@@ -9,6 +9,7 @@ import Card from "@/components/Card.astro";
 import Pagination from "@/components/Pagination.astro";
 import getUniqueTags from "@/utils/getUniqueTags";
 import getPostsByTag from "@/utils/getPostsByTag";
+import { getPath } from "@/utils/getPath";
 import { SITE } from "@/config";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
@@ -29,9 +30,21 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 const params = Astro.params;
 const { tag } = params;
 const { page, tagName } = Astro.props;
+
+// JSON-LD ItemList + 面包屑
+const itemList = page.data.map((post: any) => ({
+  name: post.data.title,
+  url: new URL(getPath(post.id, post.filePath), Astro.site ?? SITE.website)
+    .href,
+}));
+const breadcrumbs = [
+  { name: "首页", url: SITE.website },
+  { name: "Tags", url: `${SITE.website}/tags/` },
+  { name: tagName, url: Astro.url.href },
+];
 ---
 
-<Layout title={`Tag: ${tagName} | ${SITE.title}`}>
+<Layout title={`Tag: ${tagName} | ${SITE.title}`} itemList={itemList} breadcrumbs={breadcrumbs}>
   <Header />
   <Main
     pageTitle={[`Tag:`, `${tagName}`]}

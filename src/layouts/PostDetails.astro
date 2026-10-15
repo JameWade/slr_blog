@@ -68,6 +68,17 @@ const layoutProps = {
   canonicalURL,
   ogImage,
   scrollSmooth: true,
+  breadcrumbs: [
+    { name: "首页", url: SITE.website },
+    { name: "Posts", url: `${SITE.website}/posts/` },
+    {
+      name: title,
+      url:
+        canonicalURL ??
+        new URL(getPath(post.id, post.filePath), Astro.site ?? SITE.website)
+          .href,
+    },
+  ],
 };
 
 /* ========== Prev/Next Posts ========== */
