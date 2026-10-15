@@ -102,103 +102,100 @@ const nextPost =
   <main
     id="main-content"
     class:list={[
-      "w-full px-4 pb-12",
+      "mx-auto w-full max-w-app px-4 pb-12",
       { "mt-8": !SITE.showBackButton },
     ]}
     data-pagefind-body
   >
-    <div class="mx-auto max-w-app min-[1400px]:max-w-[81.5rem]">
-      <h1
-        transition:name={slugifyStr(title)}
-        class="inline-block text-2xl font-bold text-accent sm:text-3xl"
+    <h1
+      transition:name={slugifyStr(title)}
+      class="inline-block text-2xl font-bold text-accent sm:text-3xl"
+    >
+      {title}
+    </h1>
+    <div class="my-2 flex items-center gap-2">
+      <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+      <span
+        aria-hidden="true"
+        class:list={[
+          "max-sm:hidden",
+          { hidden: !SITE.editPost.enabled || hideEditPost },
+        ]}>|</span
       >
-        {title}
-      </h1>
-      <div class="my-2 flex items-center gap-2">
-        <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
-        <span
-          aria-hidden="true"
-          class:list={[
-            "max-sm:hidden",
-            { hidden: !SITE.editPost.enabled || hideEditPost },
-          ]}>|</span
-        >
-        <EditPost {hideEditPost} {post} class="max-sm:hidden" />
-      </div>
-      <div class="mt-8 flex gap-10">
-        <article
-          id="article"
-          class="app-prose min-w-0 flex-1 prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
-        >
-          <Content />
-        </article>
-        {toc.length > 1 && (
-          <aside class="hidden w-60 shrink-0 min-[1400px]:block">
-            <nav aria-label="文章目录" class="sticky top-24 max-h-[70vh] overflow-y-auto">
-              <div class="mb-3 text-sm font-semibold tracking-wide text-foreground">目录</div>
-              <ul class="space-y-1.5 border-s border-border ps-4 text-sm">
-                {toc.map(h => (
-                  <li class:list={[{ "ps-4": h.depth === 3 }]}>
-                    <a
-                      href={`#${h.slug}`}
-                      class="text-app-dim underline-offset-4 hover:text-accent hover:underline"
-                    >
-                      {h.text}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </aside>
-        )}
-      </div>
-      <div class="max-w-app">
-        <hr class="my-8 border-dashed" />
+      <EditPost {hideEditPost} {post} class="max-sm:hidden" />
+    </div>
+    <div class="relative mt-8">
+      <article
+        id="article"
+        class="app-prose prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
+      >
+        <Content />
+      </article>
+      {toc.length > 1 && (
+        <aside class="absolute inset-y-0 left-full ml-6 hidden w-40 min-[1400px]:block min-[1600px]:ml-10 min-[1600px]:w-60">
+          <nav aria-label="文章目录" class="sticky top-24 max-h-[70vh] overflow-y-auto">
+            <div class="mb-3 text-sm font-semibold tracking-wide text-foreground">目录</div>
+            <ul class="space-y-1.5 border-s border-border ps-4 text-sm">
+              {toc.map(h => (
+                <li class:list={[{ "ps-4": h.depth === 3 }]}>
+                  <a
+                    href={`#${h.slug}`}
+                    class="text-app-dim underline-offset-4 hover:text-accent hover:underline"
+                  >
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </aside>
+      )}
+    </div>
 
-        <EditPost class="sm:hidden" {hideEditPost} {post} />
+    <hr class="my-8 border-dashed" />
 
-        <ul class="mt-4 mb-8 sm:my-8">
-          {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} />)}
-        </ul>
+    <EditPost class="sm:hidden" {hideEditPost} {post} />
 
-        <BackToTopButton />
+    <ul class="mt-4 mb-8 sm:my-8">
+      {tags.map(tag => <Tag tag={slugifyStr(tag)} tagName={tag} />)}
+    </ul>
 
-        <ShareLinks />
+    <BackToTopButton />
 
-        <hr class="my-6 border-dashed" />
+    <ShareLinks />
 
-        <!-- Previous/Next Post Buttons -->
-        <div data-pagefind-ignore class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {
-            prevPost && (
-              <a
-                href={getPath(prevPost.id, prevPost.filePath)}
-                class="flex w-full gap-1 hover:opacity-75"
-              >
-                <IconChevronLeft class="inline-block flex-none rtl:rotate-180" />
-                <div>
-                  <span>Previous Post</span>
-                  <div class="text-sm text-accent/85">{prevPost.title}</div>
-                </div>
-              </a>
-            )
-          }
-          {
-            nextPost && (
-              <a
-                href={getPath(nextPost.id, nextPost.filePath)}
-                class="flex w-full justify-end gap-1 text-end hover:opacity-75 sm:col-start-2"
-              >
-                <div>
-                  <span>Next Post</span>
-                  <div class="text-sm text-accent/85">{nextPost.title}</div>
-                </div>
-                <IconChevronRight class="inline-block flex-none rtl:rotate-180" />
-              </a>
-            )
-          }
-        </div>
-      </div>
+    <hr class="my-6 border-dashed" />
+
+    <!-- Previous/Next Post Buttons -->
+    <div data-pagefind-ignore class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+      {
+        prevPost && (
+          <a
+            href={getPath(prevPost.id, prevPost.filePath)}
+            class="flex w-full gap-1 hover:opacity-75"
+          >
+            <IconChevronLeft class="inline-block flex-none rtl:rotate-180" />
+            <div>
+              <span>Previous Post</span>
+              <div class="text-sm text-accent/85">{prevPost.title}</div>
+            </div>
+          </a>
+        )
+      }
+      {
+        nextPost && (
+          <a
+            href={getPath(nextPost.id, nextPost.filePath)}
+            class="flex w-full justify-end gap-1 text-end hover:opacity-75 sm:col-start-2"
+          >
+            <div>
+              <span>Next Post</span>
+              <div class="text-sm text-accent/85">{nextPost.title}</div>
+            </div>
+            <IconChevronRight class="inline-block flex-none rtl:rotate-180" />
+          </a>
+        )
+      }
     </div>
   </main>
   <Footer />
