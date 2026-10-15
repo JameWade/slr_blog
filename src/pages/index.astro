@@ -15,15 +15,23 @@ import { SOCIALS } from "@/constants";
 import ProfileHero from "@/components/ProfileHero.astro";
 import HomeAbout from "@/components/HomeAbout.astro";
 import HomePostsList from "@/components/HomePostsList.astro";
+import { getPath } from "@/utils/getPath";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+
+// JSON-LD ItemList：帮助搜索引擎理解首页文章集合
+const itemList = sortedPosts.map(post => ({
+  name: post.data.title,
+  url: new URL(getPath(post.id, post.filePath), Astro.site ?? SITE.website)
+    .href,
+}));
 ---
 
-<Layout>
+<Layout itemList={itemList}>
   <Header />
   <main id="main-content" data-layout="index">
     <ProfileHero />

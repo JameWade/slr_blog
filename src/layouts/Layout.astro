@@ -1,6 +1,9 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
+import {
+  PUBLIC_GOOGLE_SITE_VERIFICATION,
+  PUBLIC_BAIDU_SITE_VERIFICATION,
+} from "astro:env/client";
 import { SITE, metrics } from "@/config";
 import "@/styles/global.css";
 export interface Props {
@@ -13,6 +16,8 @@ export interface Props {
   pubDatetime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
+  breadcrumbs?: { name: string; url: string }[];
+  itemList?: { name: string; url: string }[];
 }
 
 const {
@@ -25,25 +30,83 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
+  breadcrumbs = [],
+  itemList = [],
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
 
-const structuredData = {
+// WebSite 结构化数据：全站输出，帮助搜索引擎与 AI 理解站点及站内搜索入口
+const websiteData = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: `${title}`,
-  image: `${socialImageURL}`,
-  datePublished: `${pubDatetime?.toISOString()}`,
-  ...(modDatetime && { dateModified: modDatetime.toISOString() }),
-  author: [
-    {
-      "@type": "Person",
-      name: `${author}`,
-      ...(profile && { url: profile }),
-    },
-  ],
+  "@type": "WebSite",
+  name: SITE.title,
+  url: SITE.website,
+  inLanguage: SITE.lang,
+  description: SITE.desc,
+  author: {
+    "@type": "Person",
+    name: `${author}`,
+    ...(profile && { url: profile }),
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${SITE.website}/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
 };
+
+const graph: Record<string, unknown>[] = [websiteData];
+
+// 仅文章页输出 BlogPosting（此前所有页面都输出，类型不准确）
+if (pubDatetime) {
+  graph.push({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: `${title}`,
+    image: `${socialImageURL}`,
+    datePublished: `${pubDatetime.toISOString()}`,
+    ...(modDatetime && { dateModified: modDatetime.toISOString() }),
+    author: [
+      {
+        "@type": "Person",
+        name: `${author}`,
+        ...(profile && { url: profile }),
+      },
+    ],
+  });
+}
+
+if (breadcrumbs.length > 0) {
+  graph.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
+  });
+}
+
+if (itemList.length > 0) {
+  graph.push({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: itemList.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  });
+}
+
+const structuredData =
+  graph.length === 1
+    ? graph[0]
+    : { "@context": "https://schema.org", "@graph": graph };
 ---
 
 <!doctype html>
@@ -97,7 +160,7 @@ const structuredData = {
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={socialImageURL} />
 
-    <!-- Google JSON-LD Structured data -->
+    <!-- JSON-LD Structured data: WebSite (+ BlogPosting / BreadcrumbList / ItemList as applicable) -->
     <script
       type="application/ld+json"
       is:inline
@@ -123,6 +186,17 @@ const structuredData = {
         <meta
           name="google-site-verification"
           content={PUBLIC_GOOGLE_SITE_VERIFICATION}
+        />
+      )
+    }
+
+    {
+      // 百度站长平台验证：Vercel 配置 PUBLIC_BAIDU_SITE_VERIFICATION 后输出
+      // https://ziyuan.baidu.com/site/index
+      PUBLIC_BAIDU_SITE_VERIFICATION && (
+        <meta
+          name="baidu-site-verification"
+          content={PUBLIC_BAIDU_SITE_VERIFICATION}
         />
       )
     }
