@@ -12,7 +12,7 @@ description: arXiv 2610.16588：用 Pectra 升级做自然实验，测出以太�
 
 ## TL;DR
 
-一句话：以太坊卖给 Rollup 的数据可用性（blob）不靠拍卖、靠公式定价，这到底亏了多少？这篇 2026 年 10 月的实证论文用 Pectra 升级做了一次干净的自然实验——blob 价格从约 $1.40 一天内跌到接近 0，Rollup 的购买量只涨了 24%。需求弹性 **-0.19**：价格几乎不影响用量，所谓的"机械定价"主要只是换了个收钱的人。
+以太坊卖给 Rollup 的数据可用性（blob）不靠拍卖、靠公式定价，这到底亏了多少？这篇 2026 年 10 月的实证论文用 Pectra 升级做了一次干净的自然实验——blob 价格从约 $1.40 一天内跌到接近 0，Rollup 的购买量只涨了 24%。需求弹性 **-0.19**：价格几乎不影响用量，所谓的"机械定价"主要只是换了个收钱的人。
 
 > 📄 论文：*Demand Under a Mechanical Price: Elasticity and Welfare in Ethereum's Data-Availability Market*
 > 👤 作者：Farbod Ghasemlu（独立研究者）
