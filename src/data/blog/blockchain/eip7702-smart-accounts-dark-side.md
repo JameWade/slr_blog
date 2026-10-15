@@ -12,7 +12,7 @@ description: USENIX Security 2026 实证研究：扫描 366 万笔 EIP-7702 授�
 
 ## TL;DR
 
-一句话：EIP-7702 让普通钱包一键升级成智能账户，但这项发表在 USENIX Security 2026 上的大规模实证研究发现——**超过 63% 的授权交易指向了恶意合约**。"升级"按钮按下去的那一刻，你的账户可能就不再属于你了。
+EIP-7702 让普通钱包一键升级成智能账户，但这项发表在 USENIX Security 2026 上的大规模实证研究发现——**超过 63% 的授权交易指向了恶意合约**。"升级"按钮按下去的那一刻，你的账户可能就不再属于你了。
 
 > 📄 论文：*Revealing the Dark Side of Smart Accounts: An Empirical Study of EIP-7702 Incurred Risks in Blockchain Ecosystem*
 > 👥 作者：Mingyuan Huang（HKUST）、Han Liu（南开大学，通讯作者）、Shuo Yang（中山大学）、Daoyuan Wu（岭南大学）、Shuai Wang（HKUST）
