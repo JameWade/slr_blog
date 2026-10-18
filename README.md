@@ -1,4 +1,7 @@
-# AstroPaper 📄
+# 水良人的BLOG 📄
+
+> 🌐 博客正式站：[blog.zkslr.shop](https://blog.zkslr.shop) —— 区块链、密码学、量化、AI 学习笔记与顶级会议论文研读
+
 
 ![AstroPaper](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
