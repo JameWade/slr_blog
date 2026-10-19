@@ -1,0 +1,78 @@
+---
+import AboutLayout from "@/layouts/AboutLayout.astro";
+import { SITE } from "@/config";
+import { FRIEND_LINKS as LINKS } from "@/data/links";
+---
+
+<AboutLayout frontmatter={{ title: "友链" }}>
+  <section id="links" class="mb-28 max-w-app">
+    <div class="mt-8 grid gap-8">
+      <section class="w-full min-w-0">
+        <h2 class="mb-2 text-xl font-semibold tracking-wide">朋友们</h2>
+        <p class="mb-6 text-sm text-app-dim">
+          共 {LINKS.length} 位博友，按相识顺序排列，排名不分先后。
+        </p>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {LINKS.map(link => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              class="group flex items-center gap-4 rounded-xl border border-app-border/60 bg-app/30 p-4 transition-colors hover:border-accent/50 hover:bg-app/50"
+            >
+              {link.avatar ? (
+                <img
+                  src={link.avatar}
+                  alt={link.name}
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  class="h-12 w-12 shrink-0 rounded-full border border-app-border/60 bg-app object-cover"
+                />
+              ) : (
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-app-border/60 bg-accent/10 text-lg font-semibold text-accent">
+                  {link.name.charAt(0)}
+                </div>
+              )}
+              <div class="min-w-0">
+                <div class="truncate font-medium group-hover:text-accent">
+                  {link.name}
+                </div>
+                <div class="mt-0.5 line-clamp-2 text-sm text-app-dim">
+                  {link.intro}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
+        <h2 class="mb-3 text-xl font-semibold tracking-wide">互换友链</h2>
+        <div class="space-y-3 text-[15px] leading-7 text-app-dim">
+          <p>
+            欢迎还在坚持写博客的朋友互换友链。加好本站链接后，在任意一篇文章下留言或发邮件告诉我即可，我会尽快加上你的。
+          </p>
+          <ul class="m-0 list-none space-y-1 p-0">
+            <li><span class="font-medium">站点名称：</span>{SITE.title}</li>
+            <li>
+              <span class="font-medium">站点地址：</span>
+              <a
+                href={SITE.website}
+                target="_blank"
+                rel="noreferrer noopener"
+                class="underline decoration-dashed underline-offset-4 hover:text-accent"
+              >
+                {SITE.website}
+              </a>
+            </li>
+            <li><span class="font-medium">站点简介：</span>{SITE.desc}</li>
+            <li>
+              <span class="font-medium">头像地址：</span>
+              <span class="break-all">{SITE.website}/favicon.svg</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>
+</AboutLayout>
