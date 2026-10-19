@@ -14,12 +14,6 @@ export const FRIEND_LINKS: FriendLink[] = [
     avatar: "https://yvling-picbed.oss-cn-hangzhou.aliyuncs.com/notes/1787731248128.jpg",
   },
   {
-    name: "笔墨迹",
-    url: "https://blogscn.fun",
-    intro: "博友博客导航",
-    avatar: "https://blogscn.fun/favicon.ico",
-  },
-  {
     name: "WenyBlog",
     url: "https://blog.voosol.com/",
     intro: "Flight of thoughts, light of code（思绪远航，代码生光）",
