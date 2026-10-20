@@ -1,4 +1,4 @@
-  ---
+---
 import { metrics } from '@/config'
 ---
 
@@ -8,56 +8,83 @@ import { metrics } from '@/config'
 
 <script is:inline type='module' data-astro-rerun define:vars={{ metrics: metrics }}>
   if (metrics.enable && metrics.widget) {
-    fetch(metrics.widget)
-      .then((res) => res.text())
-      .then((data) => {
-        // quote.js 里每项形如 <span>序号</span><span>数值</span>，按字符串切分取数值。
-        // 不要用带反斜杠的正则：define:vars 编译会把反斜杠转义翻倍，
-        // 线上脚本里的正则永远匹配不到数据，页面会卡在“加载中...”。
-        const parts = data.split('</span><span>')
-        const num = []
-        for (let i = 1; i < parts.length; i++) {
-          const end = parts[i].indexOf('</span></p>')
-          if (end === -1) continue
-          num.push(parts[i].slice(0, end))
-        }
-        if (num.length === 0) {
-          console.warn('51.la 数据匹配失败')
-          const el = document.getElementById('widget')
-          if (el) el.innerHTML = '统计数据暂不可用'
-          return
-        }
-        const titles = [
-          '最近活跃',
-          '今日人数',
-          '今日访问',
-          '昨日人数',
-          '昨日访问',
-          '本月访问',
-          '总访问量'
-        ]
-        const container = document.getElementById('widget')
-        if (!container) return
+    const titles = [
+      '最近活跃',
+      '今日人数',
+      '今日访问',
+      '昨日人数',
+      '昨日访问',
+      '本月访问',
+      '总访问量'
+    ]
+    const container = document.getElementById('widget')
 
-        // 容器样式：与站点风格一致的卡片网格
-        container.className = 'not-prose grid grid-cols-2 gap-3 sm:grid-cols-4'
+    // quote.js 里每项形如 <span>序号</span><span>数值</span>，按字符串切分取数值。
+    function parseWidget(data) {
+      const parts = data.split('</span><span>')
+      const num = []
+      for (let i = 1; i < parts.length; i++) {
+        const end = parts[i].indexOf('</span></p>')
+        if (end === -1) continue
+        num.push(parts[i].slice(0, end))
+      }
+      return num
+    }
 
-        // 生成卡片
-        const cards = titles.map((title, i) => {
-          const value = num[i] ?? '—'
+    // 生成卡片
+    function render(values) {
+      if (!container) return
+      // 容器样式：与站点风格一致的卡片网格
+      container.className = 'not-prose grid grid-cols-2 gap-3 sm:grid-cols-4'
+      container.innerHTML = titles
+        .map((title, i) => {
+          const value = values[i] ?? '—'
           return `
             <div class="rounded-lg border border-app-border/60 bg-background/60 p-3">
               <div class="text-2xs text-app-dim">${title}</div>
               <div class="mt-1 text-lg font-bold">${value}</div>
             </div>
           `
-        }).join('')
+        })
+        .join('')
+    }
 
-        container.innerHTML = cards
-      })
-      .catch((err) => {
-        console.error('51.la 数据获取失败:', err)
-        document.getElementById('widget').innerHTML = '加载失败'
-      })
+    function fail(err) {
+      console.error('51.la 数据获取失败:', err)
+      if (container) container.innerHTML = '统计数据暂不可用'
+    }
+
+    async function load() {
+      // 优先走本站 /api 代理：v6-widget.51.la 证书过期时浏览器直连会失败，
+      // 服务端抓取不受影响（代理里忽略过期证书或走 http 兜底）
+      try {
+        const res = await fetch('/api/51la-widget')
+        if (res.ok) {
+          const json = await res.json()
+          if (json && Array.isArray(json.values) && json.values.length === titles.length) {
+            render(json.values)
+            return
+          }
+        }
+        throw new Error('proxy failed')
+      } catch (e) {
+        console.warn('51.la 代理失败，尝试直连:', e)
+      }
+      // 兜底：浏览器直连 51.la（证书恢复后可用）
+      try {
+        const res = await fetch(metrics.widget)
+        const text = await res.text()
+        const values = parseWidget(text)
+        if (values.length === titles.length) {
+          render(values)
+          return
+        }
+        throw new Error('parse failed')
+      } catch (e) {
+        fail(e)
+      }
+    }
+
+    load()
   }
 </script>
