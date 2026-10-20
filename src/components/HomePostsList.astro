@@ -19,8 +19,8 @@ const { posts } = Astro.props as Props;
 ---
 
 <section id="posts" class="pt-2">
-  <div class="flex items-start gap-4">
-    <div class="w-[120px] shrink-0 text-xl font-semibold tracking-wide text-foreground sm:w-[80px]">文章</div>
+  <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-4">
+    <div class="shrink-0 text-xl font-semibold tracking-wide text-foreground sm:w-[80px]">文章</div>
 
     <div class="min-w-0 flex-1">
       <ul class="space-y-2">
@@ -37,14 +37,14 @@ const { posts } = Astro.props as Props;
               >
                 <div class="min-w-0 flex-1">
                   <div class="truncate text-[15px] font-medium">{post.data.title}</div>
-                  <div class="mt-1 flex flex-wrap items-center gap-x-2 text-xs text-app-dim">
-                    <span class="whitespace-nowrap rounded-full border border-app-border/60 bg-app/40 px-2 py-0.5 text-2xs">
+                  <div class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-app-dim">
+                    <span class="whitespace-nowrap rounded-full border border-app-border/60 bg-app/40 px-2 py-0.5 text-[10px]">
                       {date}
                     </span>
-                    <span>约 {minutes} 分钟</span>
-                    <span class="ms-auto flex items-center gap-x-1.5">
+                    <span class="whitespace-nowrap">约 {minutes} 分钟</span>
+                    <span class="flex flex-wrap items-center gap-x-1.5 gap-y-1 sm:ms-auto">
                       {post.data.tags.slice(0, 3).map(tag => (
-                        <span class="whitespace-nowrap rounded-full border border-accent/30 px-2 py-px text-2xs text-accent">
+                        <span class="whitespace-nowrap rounded-full border border-accent/30 px-2 py-px text-[10px] text-accent">
                           #{tag}
                         </span>
                       ))}
