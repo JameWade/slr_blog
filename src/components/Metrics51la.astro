@@ -11,12 +11,22 @@ import { metrics } from '@/config'
     fetch(metrics.widget)
       .then((res) => res.text())
       .then((data) => {
-        let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g)
-        if (!num) {
+        // quote.js 里每项形如 <span>序号</span><span>数值</span>，按字符串切分取数值。
+        // 不要用带反斜杠的正则：define:vars 编译会把反斜杠转义翻倍，
+        // 线上脚本里的正则永远匹配不到数据，页面会卡在“加载中...”。
+        const parts = data.split('</span><span>')
+        const num = []
+        for (let i = 1; i < parts.length; i++) {
+          const end = parts[i].indexOf('</span></p>')
+          if (end === -1) continue
+          num.push(parts[i].slice(0, end))
+        }
+        if (num.length === 0) {
           console.warn('51.la 数据匹配失败')
+          const el = document.getElementById('widget')
+          if (el) el.innerHTML = '统计数据暂不可用'
           return
         }
-        num = num.map((el) => el.replace(/(<\/span><span>|<\/span><\/p>)/g, ''))
         const titles = [
           '最近活跃',
           '今日人数',
