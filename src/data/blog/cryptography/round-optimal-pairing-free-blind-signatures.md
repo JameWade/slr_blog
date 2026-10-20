@@ -1,1 +1,134 @@
-LS0tCnB1YkRhdGV0aW1lOiAyMDI2LTEwLTIwVDEyOjAwOjAwLjAwMCswODowMAp0aXRsZTog55uy562+5ZCN5Lik6L2u5pCe5a6a77ya6aaW5Liq5a6e55So5YyW55qE5peg6YWN5a+56L2u5pyA5LyY55uy562+5ZCNCmZlYXR1cmVkOiBmYWxzZQpkcmFmdDogZmFsc2UKdGFnczoKICAtIGNyeXB0b2dyYXBoeQogIC0gYmxpbmQtc2lnbmF0dXJlcwogIC0g6K665paH56CU6K+7CmRlc2NyaXB0aW9uOiBlUHJpbnQgMjAyNi8wOTHvvIhLYXN0bmVy44CBVGVzc2Fyb+OAgVphdmVydWNoYe+8iee7meWHuummluS4quWunueUqOeahOaXoOmFjeWvuei9ruacgOS8mOebsuetvuWQje+8muayvyBGaXNjaGxpbiDojIPlvI/jgIHku6UgTnliZXJnLVJ1ZXBwZWwg562+5ZCN5Li65bqV77yMUC0yNTYg5Y+C5pWw5LiL562+5ZCNIDEzNDkg5a2X6IqC44CB55Sf5oiQ5LiN5YiwIDUwMG1z44CB6aqM6K+B5LiN5YiwIDEwMG1z77yM5LiN5Y+v5Lyq6YCg5oCn5b2S57qm5YiwIE5SIOetvuWQjeeahCBFVUYtQ01B77yM5Y+v5a6e546w57uf6K6h55uy5oCn44CCCi0tLQoKIyMgVEw7RFIKCuebsuetvuWQjeeahOeQhuaDs+eUqOazleWPqumcgOimgSoq5Lik6L2uKirvvJrnlKjmiLflj5HkuIDlj6Xor53vvIznrb7lkI3ogIXlm57kuIDlj6Xor53vvIznu5PmnZ/jgILkvYbmpK3lnIbmm7Lnur/kuIrnmoTnm7Lnrb7lkI3plb/mnJ/lgZrkuI3liLDigJTigJTmiYDmnInlrp7nlKjmlrnmoYjpg73opoHkuInova7ku6XkuIrvvIznrb7lkI3ogIXlv4XpobvlnKjova7mrKHkuYvpl7QqKuS/neWtmOeKtuaAgSoq77yM6L+Z55u05o6l5bim5p2lIERvUyDpnaLlkozlrp7njrDngb7pmr7vvIjnrKzkuIDova7mtojmga/kuIDml6blpI3nlKjvvIznrb7lkI3lr4bpkqXlsLHms4TkuobvvJtFdXJvY3J5cHQgMjAyMSDnmoQgUk9TIOaUu+WHu+abtOaYr+aKiuW5tuWPkeWcuuaZr+S4i+eahCBTY2hub3JyIOezu+ebsuetvuWQjeaJk+epv++8ieOAguS6juaYr+W3peS4mueVjOiHs+S7iueUqOeahOaYryoq55uyIFJTQSoq77yIUkZDIDk0NzTvvInvvJrova7mnIDkvJjvvIzkvYYgUlNBIOWvhumSpeWPiOWkp+WPiOaFouOAggoKZVByaW50IDIwMjYvMDkxIOe7meWHuuS6huesrOS4gOS4qioq5a6e55SoKirnmoTnrZTmoYjvvJrnuq/mpK3lnIbmm7Lnur/vvIjml6DphY3lr7nvvInjgIHkuKTova7vvIjova7mnIDkvJjvvInjgIHlt7Llrp7njrDlj6/ot5HjgILmoLjlv4PmmK/mioogRmlzY2hsaW4gMjAwNyDlubTnmoTogIHojIPlvI/ph43mlrDlrp7kvovljJbigJTigJTnlKjmiLflr7nmtojmga/lgZrmib/or7rvvIznrb7lkI3ogIXlr7nmib/or7rnrb7lkI3vvIznlKjmiLfmnIDnu4jovpPlh7oi5oiR55+l6YGT5LiA5Liq5pyJ5pWI562+5ZCNIueahCoq6Zu255+l6K+G6K+B5piOKirogIzpnZ7nrb7lkI3mnKzouqvvvJvorqnor4HmmI7nnJ/mraPkvr/lrpznmoTlhbPplK7vvIzmmK/lupXlsYLnrb7lkI3pgInkuobpqozor4HmlrnnqIvnuq/ku6PmlbDljJbnmoQgKipOeWJlcmctUnVlcHBlbO+8iE5S77yJ562+5ZCNKirvvIgxOTkz77yJ44CC5L+d5a6I5Y+C5pWw77yITklTVCBQLTI1NiArIFNIQS0yNTbvvInkuIvnrb7lkI0gMTM0OSDlrZfoioLvvIzmma7pgJrnrJTorrDmnKznlJ/miJDkuI3liLAgNTAwbXPjgIHpqozor4HkuI3liLAgMTAwbXPvvIzku6PnoIHlt7LlvIDmupDjgIIKCiMjIOiuuuaWh+S/oeaBr+WNoQoKLSAqKuagh+mimCoq77yaUm91bmQtT3B0aW1hbCBQYWlyaW5nLUZyZWUgQmxpbmQgU2lnbmF0dXJlcwotICoq5L2c6ICFKirvvJpKdWxpYSBLYXN0bmVy77yIQ2VudHJ1bSBXaXNrdW5kZSAmIEluZm9ybWF0aWNh77yM6Zi/5aeG5pav54m55Li577yJ44CBU3RlZmFubyBUZXNzYXJv77yIVW5pdmVyc2l0eSBvZiBXYXNoaW5ndG9u77yJ44CBR3JlZyBaYXZlcnVjaGHvvIhNaWNyb3NvZnQgUmVzZWFyY2jvvIkKLSAqKuS8muiurioq77ya6aKE5Y2w5pys77yMQ3J5cHRvbG9neSBlUHJpbnQgQXJjaGl2ZSAyMDI2LzA5Me+8iDIwMjYtMDEtMjAg5oqV56i/77yMMDEtMjMg6YCa6L+H5a6h5qC477yJCi0gKirljp/mlofpk77mjqUqKu+8mmh0dHBzOi8vZXByaW50LmlhY3Iub3JnLzIwMjYvMDkxCi0gKirlrp7njrDku6PnoIEqKu+8mmh0dHBzOi8vZ2l0aHViLmNvbS96YXZlcnVjaGEvc2lnbmF0dXJlLXByb29m77yIUnVzdO+8iQoKIyMg6IOM5pmvCgrnm7Lnrb7lkI3mmK8gQ2hhdW0gMTk4MiDlubTmj5Dlh7rnmoTogIHljp/or63vvJrnrb7lkI3ogIXnu5nnlKjmiLfnrb7kuIDkuKrmtojmga/vvIzkvYYqKuWFqOeoi+eci+S4jeWIsOa2iOaBr+WGheWuuSoq77yM5LqL5ZCO5LmfKirml6Dms5Xmiornrb7lkI3lkozmn5DmrKHnrb7lj5HkvJror53lhbPogZTotbfmnaUqKuOAgue7j+WFuOW6lOeUqOaYr+eUteWtkOeOsOmHkeWSjOeUteWtkOaKleelqO+8m+i/meWHoOW5tOWug+ecn+ato+i/m+S6huW3peS4mueVjO+8mkFwcGxlIOeahOmakOengeW5v+WRiueCueWHu+W6pumHj++8iFBDTe+8ieOAgWlDbG91ZCBQcml2YXRlIFJlbGF544CBR29vZ2xlIE9uZSDnmoQgVlBOIOacjeWKoeOAgeWQhOexu+WMv+WQjSB0b2tlbiDmj5DmoYjvvIzlupXlsYLpg73mmK/nm7Lnrb7lkI3jgIIKCuS9huiQveWcsOacieS4quWwtOWwrOeahOeOsOWunu+8mumDqOe9sueUqOeahOWHoOS5juWFqOaYryoq55uyIFJTQSoq77yIUkZDIDk0NzTvvIwyMDIzIOW5tOWumueov++8ieOAguS4jeaYr+WboOS4uiBSU0Eg5aW977yM6ICM5piv5Zug5Li65a6D5pivKirova7mnIDkvJgqKueahO+8mueUqOaIt+WIsOetvuWQjeiAheWGjeWbnuadpe+8jOS4pOWPpeivneWujOS6i+OAgui9ruacgOS8mOS4jeWPquaYr+WwkeS4gOasoee9kee7nOW+gOi/lO+8mioq562+5ZCN6ICF5LiN6ZyA6KaB5Zyo5Lik6L2u5LmL6Ze05L+d5a2Y5Lu75L2V54q25oCBKirjgILkuIDml6bljY/orq7pnIDopoHkuInova7vvIznrb7lkI3ogIXlsLHlv4XpobvorrDkvY/nrKzkuIDova7lj5HnmoTkuJzopb/nrYnnrKzkuInova7lm57mnaXigJTigJTml6LmmK8gRG9TIOaUu+WHu+mdou+8jOS5n+aYr+WunueOsOeBvumavueahOa4qeW6iu+8iOiuuuaWh+eCueWQjSBbVFoyMl3jgIFbQ0tNMjNd77ya56ys5LiA6L2u5raI5oGv5aSN55So5LiA5qyh77yM562+5ZCN5a+G6ZKl55u05o6l5rOE5ryP77yJ44CC6L2u5pWw5LiN6Laz5q2j5pivICoqUk9TIOaUu+WHuyoq77yIRXVyb2NyeXB0IDIwMjHvvInmiZPnqb/lubblj5EgU2Nobm9yciDns7vnm7Lnrb7lkI3nmoTmoLnlm6DvvJvlr7nova7mnIDkvJjljY/orq7vvIzpobrluo/lronlhajlkozlubblj5HlronlhajmmL7nhLbnrYnku7fvvIzov5nnsbvmlLvlh7vlpKnnhLbkuI3lrZjlnKjjgIIKCuS6juaYr+mXrumimOW+iOiHqueEtu+8mioq6IO95LiN6IO96YCg5Ye66auY5pWI44CB5peg6YWN5a+544CB6L2u5pyA5LyY55qE55uy562+5ZCN77yfKiog5peg6YWN5a+55puy57q/77yIUC0yNTbjgIFFZDI1NTE5IOi/meexu++8ieaYr+agh+WHhuWSjOW6k+eahOS4u+a1gemAieaLqe+8jOWuieWFqOWBh+iuvueos+Wumu+8iOacgOWlveaUu+WHu+WwseaYr+mAmueUqOaUu+WHu++8ie+8jOS4jeWDj+mFjeWvueabsue6v+i/mOimgeaLheW/g+ebruagh+e+pOS4iueahOmdnumAmueUqOemu+aVo+WvueaVsOaUu+WHu+OAguatpOWJjeeahOaXoOmFjeWvueebsuetvuWQjeimgeS5iOWPquWcqOS7o+aVsOe+pOaooeWei++8iEFHTe+8ieWKoOmaj+acuumihOiogOacuumHjOivgeaYjuOAgeS4lOWPquS/nSoq5pyJ55WM5Lya6K+dKirnmoTkuI3lj6/kvKrpgKDmgKfvvIhibGluZCBTY2hub3Jy44CBYmxpbmQgT2thbW90by1TY2hub3Jy77yJ77yM6KaB5LmI5pWI546H5ouJ6IOv77yIQ1RaIENyeXB0bycyNCDnmoQgQ0RIIOaWueahiOetvuWQjeW3qOWkp++8ieOAgiLova7mnIDkvJgi6L+Z5LiA6aG577yM5LmL5YmN5rKh5Lq655yf5q2j5ou/5LiL6L+H44CCCgojIyDmlrnms5Xmi4bop6MKCiMjIyDnrKzkuIDmraXvvJpGaXNjaGxpbiDojIPlvI/igJTigJTmiooi562+5ZCNIuaNouaIkCLlr7nnrb7lkI3nmoTpm7bnn6Xor4bor4HmmI4iCgrorrrmlofnq5nlnKggRmlzY2hsaW7vvIhFdXJvY3J5cHQgMjAwN++8ieeahOmAmueUqOWPmOaNouiCqeiGgOS4iu+8jOa1geeoi+aegeeugO+8mgoKYGBgbWVybWFpZApmbG93Y2hhcnQgTFIKICAgIFUxW+eUqOaIt++8muWvuea2iOaBryBtIOWBmuaJv+ivuiBjb21dIC0tPnxjb20gKyDlj5HooYzor4HmmI4gz4BfaXNzfCBTW+etvuWQjeiAhe+8mueUqOaZrumAmuetvuWQjeaWueahiDxici8+5a+5IGNvbSDnrb7lkI3vvIzlvpfpooTnrb7lkI0gz4PigLJdCiAgICBTIC0tPnzPg+KAsnwgVTJb55So5oi377ya5oqKIM+D4oCyIOWOu+aJv+ivuuWMljxici8+5b6X5YiwIG0g5LiK55qE562+5ZCNIM+DXQogICAgVTIgLS0+fOacgOe7iOetvuWQjSA9IM+AX05SfCBWW+mqjOivgeiAheajgOafpTxici8+UG9LeyhSLHMpOiBIXm0gPSBSwrdZXnLCt0dec31dCmBgYAoK5YWz6ZSu57uG6IqC77ya6aKE562+5ZCNIM+D4oCyIOWSjOetvuWPkeS8muivneaYryoq5Y+v6ZO+5o6lKirnmoTvvIzmiYDku6XkuI3og73nm7TmjqXovpPlh7rvvJvnlKjmiLfovpPlh7rnmoTmmK8i5oiR55+l6YGTIChSLCBzKSDmu6HotrPpqozor4HmlrnnqIsi55qE6Zu255+l6K+G6K+B5piOIM+AX05S4oCU4oCUKiror4HmmI7mnKzouqvlsLHmmK/mnIDnu4jnrb7lkI0qKuOAgui/meaYr+S4gOS4qui/keW5tOiiqyBbZFBLMjJd44CBW0tOUjI0XSDmlLnov5vov4fnmoQi5YW85a655om/6K+6IueJiOacrO+8muaJv+ivuuaWueahiOWSjOetvuWQjeaWueahiOaYr+mFjeWlveWvueeahO+8jOeUqOaIt+iDveaKiuWvueaJv+ivuueahOetvuWQjSLljrvmib/or7oi5oiQ5a+55raI5oGv55qE562+5ZCN44CCCgrov5nkuKrojIPlvI/pgJrnlKjlvZLpgJrnlKjvvIznm7TmjqXlrp7kvovljJbkvJrmkp7kuIrkuKTkuKrmlYjnjofnk7bpoojvvIzorrrmlofoirHkuobmnIDlpKfnr4fluYXop6PlhrPlroPku6zvvJoKCjEuICoqz4BfTlIg55qE55S16Lev6YeM5Y+v6IO96KaB566X5ZOI5biMKirvvJror4HmmI4i5oiR55+l6YGT5LiA5Liq562+5ZCNIuS+nei1luW6leWxguetvuWQjeeahOmqjOivgei/h+eoi++8jOiAjOmqjOivgemAmuW4uOWMheWQqyLlr7nnp5jlr4blgLznrpcgU0hBLTI1NiLigJTigJTmiorlk4jluIzlh73mlbDpnZ7pu5Hnm5LlnLDloZ7ov5sgU05BUksg55S16Lev77yM5Luj5Lu354iG54K444CCCjIuICoq5Y+R6KGM6K+B5piOIM+AX2lzcyDkuZ/lj6/og73lvojotLUqKu+8mueUqOaIt+WPkeaJv+ivuuaXtui/mOimgemZhOS4gOS4qiLmib/or7rmmK/or5rlrp7nlJ/miJDnmoQi6K+B5piO77yI6Ziy55So5oi35L2c5oG277yJ77yM5YW25Luj5Lu35Y+W5Yaz5LqO5om/6K+655qE5YW35L2T5b2i5byP44CCCgojIyMg56ys5LqM5q2l77ya6YCJIE55YmVyZy1SdWVwcGVsIOetvuWQjeKAlOKAlOmqjOivgeaWueeoi+e6r+S7o+aVsO+8jOWTiOW4jOa7muWHuueUtei3rwoK6L+Z5piv5YWo5paH5pyA5YWz6ZSu55qE5LiA5qyh6YCJ5Z6L44CCTlIg562+5ZCN77yIMTk5M++8jENDU++8ieWKoOS4iiBBdGVuaWVzZeKAk2RlIE1lZGVpcm9zIDIwMDQg5bm055qE5L+u5pS554mI77yIbU5S77yJ77yM6aqM6K+B5pa556iL6ZW/6L+Z5qC377yaCgokJEhebSA9IFIgXGNkb3QgWV5yIFxjZG90IEdecywgXHF1YWQgciA6PSBcbWF0aHJte1RvfV97XG1hdGhiYntafV9wfShSKSQkCgrlhajmmK/nvqTov5DnrpflkozmjIfmlbDvvIzmsqHmnInlk4jluIzjgILlr7nlroMi55+l5pmT562+5ZCNIueahOivgeaYju+8jOeUtei3r+mHjCoq5a6M5YWo5LiN6ZyA6KaB6Z2e6buR55uS5Zyw6LCD55So5a+G56CB5a2m5ZOI5biM5Ye95pWwKirigJTigJTnk7bpooggMSDnm7TmjqXmtojlpLHjgIIKCuS4ieS4quWPmOS9k++8iOiuuuaWh+ihqCAx77yJ5Zu057uV6L+Z5Liq6YCJ5oup5bGV5byA77yaCgotICoqU2NoZW1lIDEqKu+8mueUqCBtTlLvvIzmtojmga/nm7TmjqXnvJbnoIHkuLrnvqTmjIfmlbDvvIjmtojmga/nqbrpl7QgJFxtYXRoYmJ7Wn1fcCTvvInvvIzlj5HooYzor4HmmI7nlKjovbvph48gzqMtcHJvdG9jb2zvvIhGaWF0LVNoYW1pcu+8ie+8jOacgOe7iOWxleekuueUqCBTTkFSS+OAguWuieWFqOW9kue6puWIsCBtTlIg55qEIEVVRi1DTUHjgIIKLSAqKlNjaGVtZSAyKirvvJrnlKjmoIflh4YgTlLvvIzlhYjlr7nmtojmga/nrpcgU0hBLTI1NiDlho3nvJbnoIHjgILku6Pku7fmmK/lj5HooYzml7bopoHor4HmmI4gU0hBLTI1NiDljp/lg4/igJTigJTov5nkuKogU05BUksg55qE57qm5p2f5pWw5pivIM+AX05SIOeahOe6piAqKjUg5YCNKirvvIjorrrmloforrDkvZwgIlNOQVJLKyLvvInjgILlpb3lpITmmK/lvZLnuqbliLDmoIflh4YgTlLvvIzlgYforr7mm7Tkv53lrojjgIIKLSAqKlNjaGVtZSAzKirvvJrmioogU2NoZW1lIDEg5o6o5bm/5YiwKirlsZ7mgKflkJHph48qKiAkXHZlY3ttfSTvvIzmib/or7rlvaLlpoIgJEdeey1rXzB9XHByb2QgSF9pXnttX2l9JO+8jOeUqOaIt+WxleekuuWHreivgeaXtuWPr+S7pemAieaLqeaAp+aKq+mcsumDqOWIhuWxnuaAp++8iOS4i+agh+mbhiAkSSQg5YWs5byA44CB5YW25L2Z5L+d5a+G77yJ77yM55uy5oCn5ZyoIuaKq+mcsumbhuWQiOebuOWQjCLnmoTnlKjmiLfkuYvpl7TmiJDnq4vigJTigJTov5nlsLHmmK8qKuWMv+WQjeWHreivgSoq55qE5b2i5oCB77yM5LiU5LiA5byg5Yet6K+B5Y+v5peg6ZmQ5qyh5LiN5Y+v6ZO+5o6l5Zyw5Ye656S644CCCgrnrb7lj5HmtYHnqIvvvIjku6UgU2NoZW1lIDEg5Li65L6L77yJ5YC85b6X57uG55yL77yM5Zug5Li65a6D5bGV56S65LqGIuS4pOi9riLmmK/mgI7kuYjmi7zlh7rmnaXnmoTvvJrnlKjmiLflhYjph4fmoLfoh6rlt7HnmoTpmo/mnLrku73pop0gJGtfMCTvvIzlj5EgJFJfMCA9IEdeey1rXzB9SF5tJCDnu5nnrb7lkI3ogIXvvJvnrb7lkI3ogIXpqozor4Egz4BfaXNzIOWQjumHh+agt+iHquW3seeahOS7veminSAka18xJO+8jOeulyAkUiA9IFJfMCBcY2RvdCBHXnsta18xfSTjgIEkciA9IFxtYXRocm17VG99X3tcbWF0aGJie1p9X3B9KFIpJOOAgSRzXzEgPSBrXzEgLSByeCQg5Zue57uZ55So5oi377yb55So5oi36KGl5LiKICRzID0gc18xICsga18wJCDlvpfliLDlrozmlbQgTlIg562+5ZCNICQoUiwgcykk77yM5YaN6L2s5oiQ6Zu255+l6K+G6K+B5piO6L6T5Ye644CC5Lik6L2u77yM562+5ZCN6ICF5peg54q25oCB44CCCgojIyMg56ys5LiJ5q2l77ya6K+B5piO5oqA5pyv4oCU4oCU5Y+q5Zyo56ys5LqM5Liq576k6YeM55SoIEFHTQoK5a6J5YWo6K+B5piO5piv6K665paH55qE5Y+m5LiA5aSn5Y2W54K544CC55uy5oCn77yIVGhlb3JlbSAx77yJ5b6I5bmy5YeA77yaz4BfaXNzIOWSjCDPgF9OUiDpg73mmK/pm7bnn6Xor4bnmoTvvIzmlrnmoYjlsLHnm7LvvJvlj4jlm6DkuLrlj5HooYznlKggUGVkZXJzZW4g5om/6K+677yI5a6M576O6ZqQ6JeP77yJ5YqgIM6jLXByb3RvY29s77yI57uf6K6h6Zu255+l6K+G77yJ77yMU2NoZW1lIDEvMyDog73lgZrliLAqKue7n+iuoeebsuaApyoq77yI5pWM5omL566X5Yqb5peg6ZmQ5Lmf5YiG5LiN5Ye65p2l77yJ44CCCgrkuI3lj6/kvKrpgKDmgKfvvIhUaGVvcmVtIDLvvIzihJMtb25lLW1vcmUg5LiN5Y+v5Lyq6YCg77yJ5b2S57qm5Yiw5Lik5Lu25LqL77yaTlIvbU5SIOeahCBFVUYtQ01BIOWuieWFqO+8jOS7peWPiuS4pOS4qiBOSVpLIOeahCoq6KeB6K+B5omp5bGV5qih5ouf5oCn77yIV0VF77yJKirjgIJXRUUg5q+U55+l6K+G5Y+v6Z2g5oCn5pu05by677ya5qih5ouf5Zmo5LiN5LuF6KaB6aqM6K+B6K+B5piO77yM6L+Y6KaB6IO95o+Q5Y+W5Ye66KeB6K+B77yM6ICM5pWM5omL5YiG5LiN5riF6Ieq5bex5Zyo5ZKM55yf5a6e6aqM6K+B6ICF6L+Y5piv5ZKM5o+Q5Y+W5qih5ouf5Zmo5omT5Lqk6YGT44CCCgrlrp7njrAgV0VFIOaXtuS9nOiAheeOqeS6huS4quW3p++8muiuqeivgeaYjuiAheWcqCoq56ys5LqM5Liq5ZCM6Zi2576kICRHJyQqKiDph4zlho3lgZrkuIDku70gUGVkZXJzZW4g5om/6K+677yM55SoIM6jLXByb3RvY29sIOivgeaYjiLkuKTku73mib/or7rmiZPlvIDnmoTmmK/lkIzkuIDkuKrlgLwi77yI5ZCM6Zi2576k5LmL6Ze06L+Z5b6I5L6/5a6c77yJ44CC5o+Q5Y+W5Y+q6ZyA6KaB5ZyoICRHJyQg6YeM5YGH6K6+5pWM5omL5piv5Luj5pWw55qE4oCU4oCUKirlrozlhajpgb/lvIDlr7nkuLvnvqQgJEckIOeahCBBR00g5YGH6K6+KirvvIxBR00g55qE5L2/55So6KKr5Y6L57yp5Yiw5pyA5bCP6IyD5Zu077yM6ICM5LiU5ZCM5LiA5LiqICRHJyQg5Y+v5ZCM5pe25pyN5YqhIM+AX2lzcyDlkowgz4BfTlLjgILpobrluKbor4HmmI7kuobkuIDkuKrpgJrnlKjnu5PorrrvvJrnjrDmnIkgTklaSyDnqI3liqDmlLnpgKDlsLHog73ojrflvpfnm7Tnur/lvI/mj5Dlj5bog73lipvvvIzov5nmmK/ni6znq4vlj6/lpI3nlKjnmoTlt6XlhbfjgIIKCiMjIyDnrKzlm5vmraXvvJrkuLrku4DkuYjlv4Xpobsi6Z2e6buR55uSIuKAlOKAlOW5tuWPkeW3peS9nOeahOS4jeWPr+iDveaAp+e7k+aenAoKRGlldHrjgIFLYXN0bmVy44CBVGVzc2FybyDnmoTlubblj5Hlt6XkvZzvvIhbREtUMjZd77yM5bey6KKrIENyeXB0byAyMDI2IOaOpeaUtu+8ieivgeaYjuS6hu+8muWmguaenOe+pOi/kOeul+WSjOmaj+acuumihOiogOacuumDveiiq+m7keebkuS9v+eUqO+8jCoq6L2u5pyA5LyY55qE5peg6YWN5a+555uy562+5ZCN5ZyoIFJPTSDkuIvkuI3lj6/og73lrZjlnKgqKuOAgui/meaBsOWlvee7meacrOaWh+iDjOS5pu+8miRcbWF0aHJte1RvfV97XG1hdGhiYntafV9wfSQg6L2s5o2i5Ye95pWw5ZKM6Zu255+l6K+G6K+B5piO6L+Z56eN6Z2e6buR55uS5oqA5ben5LiN5pivIumhuuaJi+eUqOS4gOS4iyLvvIzogIzmmK8qKue7leW8gOS4jeWPr+iDveaAp+aJgOW/hemcgOeahCoq44CCCgojIyDlrp7pqozkuI7mlbDmja4KCuiuuuaWh+WunueOsOS6hiBTY2hlbWUgMSDlkowgU2NoZW1lIDLvvIhSdXN077yMNiDmoLggSW50ZWwgWGVvbiBXLTIxMzMgQCAzLjYwR0h677yJ77yM6L+Z5pivIuWunueUqCLkuozlrZfmnIDnoaznmoTor4Hmja7jgILnlLXot6/lj6rpnIDopoEqKuS4gOasoeagh+mHj+S5mOazleOAgeS4gOS4qiBaSyDlj4vlpb3lk4jluIzvvIhQb3NlaWRvbu+8ieOAgeS4gOasoei3qOWfn+S5mOazlSoq77yMz4BfTlIg6YOo5YiG5Y+q5pyJICoqMzg3MyDkuKogUjFDUyDnuqbmnZ8qKuKAlOKAlOavlOebtOaOpeWunueOsOmqjOivgeaWueeoi++8iOS4pOasoeagh+mHj+S5mOazle+8iee6puadn+abtOWwkeOAggoK5Lik5LiqIFNOQVJLIOWQjuerr+WPr+aNou+8jOWQhOacieWPluiIje+8mgoKLSAqKkJ1bGxldHByb29mcyDot6/nur8qKu+8muivgeaYjuacgOefre+8jOe6piAqKjEuM0tCKirvvIzkvYbor4HmmI7ogIXmhaLkuIDkupvvvIgzMDDigJM1MDBtc++8ieOAguS9nOiAhei/mOmhuuaJi+S8mOWMluS6hiBCdWxsZXRwcm9vZnMg55qE5YaF56ev6K666K+B77yISVBB77yJ77yM5oqK5q+P6L2u6YCS5b2S6YeM5pu05paw55Sf5oiQ5YWD55qE6YCQ5Liq5qCH6YeP5LmY5rOVIuaOqOi/nyLlubbov5vlkI7nu63nmoTlpJrmoIfph4/kuZjms5XvvIzlpKflrp7kvovkuIrmr5Tlt7LmnInlrp7njrDlv6sgKioy4oCTMyDlgI0qKuOAggotICoqU3BhcnRhbi1OSVpLIOi3r+e6vyoq77ya6K+B5piO6ICF5b+rIDEuNOKAkzEuNyDlgI3vvIzpqozor4Hml7bpl7TlkowgQlAg55u45ZCM77yM5L2G6K+B5piO5aSnIDEwIOWAje+8iOe6piAxMi40S0LvvInjgIIKCuS4pOWll+absue6v+WPguaVsO+8muS/neWuiOe7hO+8iOetvuWQjeeUqCBOSVNUIFAtMjU244CB6K+B5piO55SoIFQtMjU2IOabsue6v+mTvu+8ieWSjOaAp+iDvee7hO+8iFBhc3RhIOabsue6vyBQYWxsYXMvVmVzdGHvvIxaY2FzaCDkuZ/lnKjnlKjnmoTpgInlnovvvIzlubbooYwgTVNNIOW/qyAxLjLigJMxLjcg5YCN77yJ44CCCgrooaggMiDnmoTlhbPplK7mlbDlrZfvvIhQLTI1NiDnu4QgLyBWZXN0YSDnu4TvvIzlrZfoioLmlbDkuLogUC0yNTYg57uE77yJ77yaCgp8IOaTjeS9nCB8IFAtMjU2IHwgVmVzdGEgfCDlpKflsI8gfAp8LS0tfC0tLXwtLS18LS0tfAp8IOWPkeihjO+8mueUqOaIt+ivt+axgiB8IDEuMDRtcyB8IDEuMDdtcyB8IDE0MEIgfAp8IOWPkeihjO+8muetvuWQjeiAhSB8IDAuOTNtcyB8IDAuNzdtcyB8IDc2QiB8Cnwg5Y+R6KGM77ya55So5oi35pS25bC+IHwgMC43Mm1zIHwgMC42MW1zIHwg4oCUIHwKfCDlh7rnpLrnrb7lkI3vvIhCUO+8iXwgNTAzLjU4bXMgfCAzNDIuODRtcyB8ICoqMTM0OUIqKiB8Cnwg6aqM6K+B5Ye656S677yIQlDvvIl8IDkxLjQ3bXMgfCA3Mi42MW1zIHwg4oCUIHwKfCDlh7rnpLrnrb7lkI3vvIhTcGFydGFu77yJfCAzNDcuNzBtcyB8IDE5Ni45MG1zIHwgMTIzODJCIHwKfCBTY2hlbWUgMiDlj5HooYzvvJrnlKjmiLfor7fmsYIgfCAzNjQuNDZtcyB8IDI0NC41MG1zIHwgMTY1OTBCIHwKfCBTY2hlbWUgMiDlj5HooYzvvJrnrb7lkI3ogIUgfCAxNjQuMjhtcyB8IDEyNi4zMW1zIHwgNzZCIHwKCuivu+azle+8mlNjaGVtZSAxIOeahOWPkeihjOi9u+WIsOWPr+S7peW/veeVpe+8iOavq+enkue6p+OAgeeZvuWtl+iKgue6p++8ie+8jOWHuuekuuS4gOasoee6piAwLjUg56eS77yIQlDvvInmiJYgMC4zNSDnp5LvvIhTcGFydGFu77yJ77ybU2NoZW1lIDIg5Zug5Li65Y+R6KGM5pe26KaB6K+BIFNIQS0yNTYg5Y6f5YOP77yIMjgyMDIg5Liq57qm5p2f77yJ77yM5Y+R6KGM6LS15Lik5Liq5pWw6YeP57qn4oCU4oCU6L+Z5bCx5pivIuS/neWuiOWBh+iuviLnmoTku7fmoLzjgILmkZjopoHph4zpgqPlj6Ui562+5ZCNIDEzNDkg5a2X6IqC44CB55Sf5oiQ5LiN5YiwIDUwMG1z44CB6aqM6K+B5LiN5YiwIDEwMG1zIuato+aYryBQLTI1NiDliqAgQlAg6L+Z57uE5pWw5a2X44CC5pyJ5oSP5oCd55qE5bel56iL57uT6K6677ya5a+5Kirnrb7lj5HogIXop4bop5IqKu+8iOacjeWKoeWZqOW/meOAgeeUqOaIt+mXsu+8ie+8jEJQIOeJiOabtOWQiOmAguKAlOKAlOmqjOivgeW8gOmUgOS4pOiAheebuOW9k++8jOS9huW4puWuveecgeS4gOS4quaVsOmHj+e6p++8m1AtMjU2IOaNouaIkCBWZXN0Ye+8jOmqjOivgeWPquaFoiAxLjI1IOWAje+8jOS/neWuiOabsue6v+S7o+S7t+W+iOWwj+OAggoKIyMg55u45YWz5bel5L2c5a+55q+UCgotICoq55uyIFJTQe+8iFJGQyA5NDc077yJKirvvJrlt6XkuJrnlYznjrDnirbvvIzova7mnIDkvJjkvYYgUlNBIOWvhumSpeWkp+OAgeaFouOAguacrOaWh+aYr+esrOS4gOS4quWcqCLml6DphY3lr7nmpK3lnIbmm7Lnur8i6L+Z5p2h6LWb6YGT5LiK5oqK6L2u5pyA5LyY5YGa5Yiw5a6e55So55qE77yM5Y+v5Lul6KeG5Li655uyIFJTQSDnmoTnm7TmjqXmm7/ku6PlgJnpgInjgIIKLSAqKkNUWu+8iENyeXB0bycyNO+8jENESCDlgYforr7vvIkqKu+8muaXoOmFjeWvueebsuetvuWQjeeahOS4iuS4gOS7o+agh+adhu+8jOS9huetvuWQjeW3qOWkp++8myoqS1JXMjTvvIhBc2lhY3J5cHQnMjTvvIkqKiDmiorlroPljovnvKnliLAgMjI0IOWtl+iKguOAgemAmuS/oemZjSAxMCDlgI3ku6XkuIrvvIzlgYforr7ljbTmmK8gRERI77ybKipLTlIyNO+8iENyeXB0bycyNO+8iSoqIOeUqCBzdHJvbmcgUlNBIOWBh+iuvuWBmuWIsCA0LjI4S0Ig562+5ZCN4oCU4oCU6YO95LiN6L2u5pyA5LyY44CC5pys5paH55qEIDEzNDkg5a2X6IqC562+5ZCN5ZyoIui9ruacgOS8mCLov5nkuKrnuqbmnZ/kuIvmmK/pppbmrKHlj6/mjqXlj5fjgIIKLSAqKkZXMjQqKu+8muaAnei3r+acgOaOpei/ke+8iOetvuWPkeaXtuS5n+eUqCB6a1NOQVJL44CB5b2S57qm5Yiw5pmu6YCaIFNjaG5vcnLvvInvvIzkvYYgU05BUksg5piv6YWN5a+557O755qEIEdyb3RoMTYvUGxvbmvvvIxzZWNwMjU2azEg5YqgIFNIQS0yNTYg5a6e5L6L5YyW6KaBKirkuIrnmb7kuIfnuqbmnZ8qKuOAgeivgeaYjuWHoOWNgeenkuWIsOWHoOWIhumSn++8jOS4lOWPquacieiuoeeul+ebsuaAp+OAguacrOaWh+WFqOeoi+emu+aVo+WvueaVsOWBh+iuvuOAgeaXoOmcgOWPr+S/oSBzZXR1cO+8iEJQL1NwYXJ0YW4g6YO95piv6YCP5piO55qE77yJ44CCCi0gKipCSEtSMjbvvIhBc2lhY3J5cHQgMjAyNe+8iSoq77ya57Sn5a6J5YWo55qE5peg6YWN5a+555uy562+5ZCN77yIMTAg5Liq576k5YWD5YqgIDI5IOS4qiAkXG1hdGhiYntafV9wJCDlhYPvvInvvIzkvYbkuInova7jgILmnKzmloflkozlroPnmoTlj5boiI3mraPkuqTvvJrkuIDkuKropoEi57SnIu+8jOS4gOS4quimgSLova7mnIDkvJgi44CCCi0gKipTbm93YmxpbmTvvIhDcnlwdG8nMjPvvIkqKu+8mumXqOmZkOebsuetvuWQje+8jOWQjOWboumYn++8iFRlc3Nhcm8g5Y+C5LiO77yJ55qE5YmN5L2c77yM6Kej5Yaz55qE5pivIuWIhuaVo+etvuWQjeWvhumSpSLnmoTlj6bkuIDkuKrnu7TluqbjgIIKCiMjIOWxgOmZkOS4juW8gOaUvumXrumimAoKLSAqKumihOWNsOacrOeKtuaAgSoq77yaZVByaW50IDIwMjYvMDkx77yM55uu5YmN5piv6aKE5Y2w5pys77yM5pyq57uP6L+H6aG25Lya5ZCM6KGM6K+E5a6h77yI5LiN6L+H5ZCM5L2c6ICF55qE5Lik5Liq55u45YWz57uT5p6c5bey6KKrIENyeXB0byAyMDI2IOaOpeaUtu+8ieOAggotICoq6K+B5piO5qih5Z6LKirvvJpST00g5Yqg6YOo5YiGIEFHTe+8iOWPquWvueesrOS6jOS4que+pCAkRyck77yJ77yM5LiN5piv5qCH5YeG5qih5Z6L77yb5ZCO6YeP5a2Q5LiN5a6J5YWo77yI57qv56a75pWj5a+55pWw77yJ44CCCi0gKirlh7rnpLrmiJDmnKwqKu+8muavj+asoeWHuuekuuetvuWQjemDveimgeeul+S4gOS4qiBTTkFSS++8iOe6piAwLjUg56eS6K+B5piO6ICF5pe26Ze077yJ77yM5q+UIuWHuuekuuS4gOS4quaZrumAmuetvuWQjSLotLXkuIDkuKrph4/nuqfigJTigJTov5nmmK8gRmlzY2hsaW4g6IyD5byP55qE57uT5p6E5oCn5Luj5Lu377yM6auY6aKR5Ye656S65Zy65pmv6KaB5o6C6YeP44CCCi0gKipTY2hlbWUgMiDnmoTlj5HooYznqI4qKu+8mlNIQS0yNTYg5Y6f5YOP6K+B5piO6K6p5Y+R6KGM6LS15LqG5Lik5Liq5pWw6YeP57qn77yIMTY1OTAg5a2X6IqC44CBMzY0bXPvvInvvIzmg7PopoHkv53lrojlgYforr7lsLHlvpfku5jov5nnrJTpkrHjgIIKLSAqKlNjaGVtZSAzIOacquWunua1iyoq77ya5Yy/5ZCN5Yet6K+B5Y+Y5L2T5Y+q57uZ5LqG5p6E6YCg5ZKM6K+B5piO77yM5rKh5pyJIGJlbmNobWFya++8jOWkmuWxnuaAp+WcuuaZr+eahOWunumZheW8gOmUgOacquefpeOAggotICoqJFxtYXRocm17VG99X3tcbWF0aGJie1p9X3B9JCDnmoTpnZ7pu5Hnm5Lkvp3otZYqKu+8muS4jeWPr+iDveaAp+e7k+aenOivtOS6hui/meaYr+W/hemcgOeahO+8jOS9huWug+S5n+aEj+WRs+edgOaWueahiOWSjOWFt+S9k+absue6vy/nvJbnoIHnu5Hlvpfmm7TntKfvvIzmjaLmm7Lnur/opoHph43mlrDlrqHop4bjgIIKCiMjIOS4gOeCueaAneiAgwoK6L+Z56+H6K665paH5pyA5YC85b6X6K6w5L2P55qE5LiN5piv5p+Q5Liq5a6a55CG77yM6ICM5piv5a6DKirpgInlr7nkuobmiJjlnLoqKu+8muebsuetvuWQjeeahOiQveWcsOeTtumiiOS7juadpeS4jeaYryLnrb7lkI3lho3lsI8gMTAwIOWtl+iKgiLvvIzogIzmmK8i5LiJ6L2u5Y+Y5Lik6L2uIuKAlOKAlOi9ruacgOS8mOa2iOaOieeahOaYr+etvuWQjeiAheeahOeKtuaAgeOAgURvUyDpnaLlkozmlbTmlbTkuIDnsbvlrp7njrDngb7pmr7vvIzov5nmmK/pg6jnvbLmlrnnnJ/mraPmhL/mhI/kubDljZXnmoTkuJzopb/jgILmmI7noa7liKTmlq3vvJoqKuWcqCLml6DphY3lr7njgIHkuKTova7jgIHml6DpnIDlj6/kv6Egc2V0dXDjgIHmnInlvIDmupDlrp7njrAi6L+Z5Liq57uE5ZCI5LiL77yM5pys5paH5piv55uu5YmN5ZSv5LiA55qE6YCJ5oup77yb5Yy/5ZCN5Yet6K+B77yIU2NoZW1lIDPvvInmmK/lroPmnIDmnInmg7PosaHlipvnmoTokL3ngrkqKuKAlOKAlOS4gOW8oOWHreivgeaXoOmZkOasoeS4jeWPr+mTvuaOpeWHuuekuuOAgei/mOiDvemAieaLqeaAp+aKq+mcsuWxnuaAp++8jOato+WlveWNoeWcqCLlkIjop4Tlj4jopoHpmpDnp4Ei55qE55yf5a6e6ZyA5rGC5LiK44CC5L2G5a6D56a75pu/5o2i55uyIFJTQSDov5jmnInkuKTpgZPlnY7vvJrlh7rnpLrkvqcgMC41IOenkueahOivgeaYjuiAheaIkOacrO+8jOS7peWPiumihOWNsOacrOWwmuacque7j+i/h+WQjOihjOivhOWuoeOAggoKIyMg5Y6f5paH6ZO+5o6lCgotIGVQcmludCDlhajmlofvvJpodHRwczovL2VwcmludC5pYWNyLm9yZy8yMDI2LzA5MQotIOWunueOsOS7o+egge+8mmh0dHBzOi8vZ2l0aHViLmNvbS96YXZlcnVjaGEvc2lnbmF0dXJlLXByb29mCi0gSUFDUiDmlrDpl7vpobXvvJpodHRwczovL2lhY3Iub3JnL25ld3MvaXRlbS8yNzQ5Nwo=
+---
+pubDatetime: 2026-10-20T12:00:00.000+08:00
+title: 盲签名两轮搞定：首个实用化的无配对轮最优盲签名
+featured: false
+draft: false
+tags:
+  - cryptography
+  - blind-signatures
+  - 论文研读
+description: ePrint 2026/091（Kastner、Tessaro、Zaverucha）给出首个实用的无配对轮最优盲签名：沿 Fischlin 范式、以 Nyberg-Rueppel 签名为底，P-256 参数下签名 1349 字节、生成不到 500ms、验证不到 100ms，不可伪造性归约到 NR 签名的 EUF-CMA，可实现统计盲性。
+---
+
+## TL;DR
+
+盲签名的理想用法只需要**两轮**：用户发一句话，签名者回一句话，结束。但椭圆曲线上的盲签名长期做不到——所有实用方案都要三轮以上，签名者必须在轮次之间**保存状态**，这直接带来 DoS 面和实现灾难（第一轮消息一旦复用，签名密钥就泄了；Eurocrypt 2021 的 ROS 攻击更是把并发场景下的 Schnorr 系盲签名打穿）。于是工业界至今用的是**盲 RSA**（RFC 9474）：轮最优，但 RSA 密钥又大又慢。
+
+ePrint 2026/091 给出了第一个**实用**的答案：纯椭圆曲线（无配对）、两轮（轮最优）、已实现可跑。核心是把 Fischlin 2007 年的老范式重新实例化——用户对消息做承诺，签名者对承诺签名，用户最终输出"我知道一个有效签名"的**零知识证明**而非签名本身；让证明真正便宜的关键，是底层签名选了验证方程纯代数化的 **Nyberg-Rueppel（NR）签名**（1993）。保守参数（NIST P-256 + SHA-256）下签名 1349 字节，普通笔记本生成不到 500ms、验证不到 100ms，代码已开源。
+
+## 论文信息卡
+
+- **标题**：Round-Optimal Pairing-Free Blind Signatures
+- **作者**：Julia Kastner（Centrum Wiskunde & Informatica，阿姆斯特丹）、Stefano Tessaro（University of Washington）、Greg Zaverucha（Microsoft Research）
+- **会议**：预印本，Cryptology ePrint Archive 2026/091（2026-01-20 投稿，01-23 通过审核）
+- **原文链接**：https://eprint.iacr.org/2026/091
+- **实现代码**：https://github.com/zaverucha/signature-proof（Rust）
+
+## 背景
+
+盲签名是 Chaum 1982 年提出的老原语：签名者给用户签一个消息，但**全程看不到消息内容**，事后也**无法把签名和某次签发会话关联起来**。经典应用是电子现金和电子投票；这几年它真正进了工业界：Apple 的隐私广告点击度量（PCM）、iCloud Private Relay、Google One 的 VPN 服务、各类匿名 token 提案，底层都是盲签名。
+
+但落地有个尴尬的现实：部署用的几乎全是**盲 RSA**（RFC 9474，2023 年定稿）。不是因为 RSA 好，而是因为它是**轮最优**的：用户到签名者再回来，两句话完事。轮最优不只是少一次网络往返：**签名者不需要在两轮之间保存任何状态**。一旦协议需要三轮，签名者就必须记住第一轮发的东西等第三轮回来——既是 DoS 攻击面，也是实现灾难的温床（论文点名 [TZ22]、[CKM23]：第一轮消息复用一次，签名密钥直接泄漏）。轮数不足正是 **ROS 攻击**（Eurocrypt 2021）打穿并发 Schnorr 系盲签名的根因；对轮最优协议，顺序安全和并发安全显然等价，这类攻击天然不存在。
+
+于是问题很自然：**能不能造出高效、无配对、轮最优的盲签名？** 无配对曲线（P-256、Ed25519 这类）是标准和库的主流选择，安全假设稳定（最好攻击就是通用攻击），不像配对曲线还要担心目标群上的非通用离散对数攻击。此前的无配对盲签名要么只在代数群模型（AGM）加随机预言机里证明、且只保**有界会话**的不可伪造性（blind Schnorr、blind Okamoto-Schnorr），要么效率拉胯（CTZ Crypto'24 的 CDH 方案签名巨大）。"轮最优"这一项，之前没人真正拿下过。
+
+## 方法拆解
+
+### 第一步：Fischlin 范式——把"签名"换成"对签名的零知识证明"
+
+论文站在 Fischlin（Eurocrypt 2007）的通用变换肩膀上，流程极简：
+
+```mermaid
+flowchart LR
+    U1[用户：对消息 m 做承诺 com] -->|com + 发行证明 π_iss| S[签名者：用普通签名方案<br/>对 com 签名，得预签名 σ′]
+    S -->|σ′| U2[用户：把 σ′ 去承诺化<br/>得到 m 上的签名 σ]
+    U2 -->|最终签名 = π_NR| V[验证者检查<br/>PoK{(R,s): H^m = R·Y^r·G^s}]
+```
+
+关键细节：预签名 σ′ 和签发会话是**可链接**的，所以不能直接输出；用户输出的是"我知道 (R, s) 满足验证方程"的零知识证明 π_NR——**证明本身就是最终签名**。这是一个近年被 [dPK22]、[KNR24] 改进过的"兼容承诺"版本：承诺方案和签名方案是配好对的，用户能把对承诺的签名"去承诺"成对消息的签名。
+
+这个范式通用归通用，直接实例化会撞上两个效率瓶颈，论文花了最大篇幅解决它们：
+
+1. **π_NR 的电路里可能要算哈希**：证明"我知道一个签名"依赖底层签名的验证过程，而验证通常包含"对秘密值算 SHA-256"——把哈希函数非黑盒地塞进 SNARK 电路，代价爆炸。
+2. **发行证明 π_iss 也可能很贵**：用户发承诺时还要附一个"承诺是诚实生成的"证明（防用户作恶），其代价取决于承诺的具体形式。
+
+### 第二步：选 Nyberg-Rueppel 签名——验证方程纯代数，哈希滚出电路
+
+这是全文最关键的一次选型。NR 签名（1993，CCS）加上 Ateniese–de Medeiros 2004 年的修改版（mNR），验证方程长这样：
+
+$$H^m = R \cdot Y^r \cdot G^s, \quad r := \mathrm{To}_{\mathbb{Z}_p}(R)$$
+
+全是群运算和指数，没有哈希。对它"知晓签名"的证明，电路里**完全不需要非黑盒地调用密码学哈希函数**——瓶颈 1 直接消失。
+
+三个变体（论文表 1）围绕这个选择展开：
+
+- **Scheme 1**：用 mNR，消息直接编码为群指数（消息空间 $\mathbb{Z}_p$），发行证明用轻量 Σ-protocol（Fiat-Shamir），最终展示用 SNARK。安全归约到 mNR 的 EUF-CMA。
+- **Scheme 2**：用标准 NR，先对消息算 SHA-256 再编码。代价是发行时要证明 SHA-256 原像——这个 SNARK 的约束数是 π_NR 的约 **5 倍**（论文记作 "SNARK+"）。好处是归约到标准 NR，假设更保守。
+- **Scheme 3**：把 Scheme 1 推广到**属性向量** $\vec{m}$，承诺形如 $G^{-k_0}\prod H_i^{m_i}$，用户展示凭证时可以选择性披露部分属性（下标集 $I$ 公开、其余保密），盲性在"披露集合相同"的用户之间成立——这就是**匿名凭证**的形态，且一张凭证可无限次不可链接地出示。
+
+签发流程（以 Scheme 1 为例）值得细看，因为它展示了"两轮"是怎么拼出来的：用户先采样自己的随机份额 $k_0$，发 $R_0 = G^{-k_0}H^m$ 给签名者；签名者验证 π_iss 后采样自己的份额 $k_1$，算 $R = R_0 \cdot G^{-k_1}$、$r = \mathrm{To}_{\mathbb{Z}_p}(R)$、$s_1 = k_1 - rx$ 回给用户；用户补上 $s = s_1 + k_0$ 得到完整 NR 签名 $(R, s)$，再转成零知识证明输出。两轮，签名者无状态。
+
+### 第三步：证明技术——只在第二个群里用 AGM
+
+安全证明是论文的另一大卖点。盲性（Theorem 1）很干净：π_iss 和 π_NR 都是零知识的，方案就盲；又因为发行用 Pedersen 承诺（完美隐藏）加 Σ-protocol（统计零知识），Scheme 1/3 能做到**统计盲性**（敌手算力无限也分不出来）。
+
+不可伪造性（Theorem 2，ℓ-one-more 不可伪造）归约到两件事：NR/mNR 的 EUF-CMA 安全，以及两个 NIZK 的**见证扩展模拟性（WEE）**。WEE 比知识可靠性更强：模拟器不仅要验证证明，还要能提取出见证，而敌手分不清自己在和真实验证者还是和提取模拟器打交道。
+
+实现 WEE 时作者玩了个巧：让证明者在**第二个同阶群 $G'$** 里再做一份 Pedersen 承诺，用 Σ-protocol 证明"两份承诺打开的是同一个值"（同阶群之间这很便宜）。提取只需要在 $G'$ 里假设敌手是代数的——**完全避开对主群 $G$ 的 AGM 假设**，AGM 的使用被压缩到最小范围，而且同一个 $G'$ 可同时服务 π_iss 和 π_NR。顺带证明了一个通用结论：现有 NIZK 稍加改造就能获得直线式提取能力，这是独立可复用的工具。
+
+### 第四步：为什么必须"非黑盒"——并发工作的不可能性结果
+
+Dietz、Kastner、Tessaro 的并发工作（[DKT26]，已被 Crypto 2026 接收）证明了：如果群运算和随机预言机都被黑盒使用，**轮最优的无配对盲签名在 ROM 下不可能存在**。这恰好给本文背书：$\mathrm{To}_{\mathbb{Z}_p}$ 转换函数和零知识证明这种非黑盒技巧不是"顺手用一下"，而是**绕开不可能性所必需的**。
+
+## 实验与数据
+
+论文实现了 Scheme 1 和 Scheme 2（Rust，6 核 Intel Xeon W-2133 @ 3.60GHz），这是"实用"二字最硬的证据。电路只需要**一次标量乘法、一个 ZK 友好哈希（Poseidon）、一次跨域乘法**，π_NR 部分只有 **3873 个 R1CS 约束**——比直接实现验证方程（两次标量乘法）约束更少。
+
+两个 SNARK 后端可换，各有取舍：
+
+- **Bulletproofs 路线**：证明最短，约 **1.3KB**，但证明者慢一些（300–500ms）。作者还顺手优化了 Bulletproofs 的内积论证（IPA），把每轮递归里更新生成元的逐个标量乘法"推迟"并进后续的多标量乘法，大实例上比已有实现快 **2–3 倍**。
+- **Spartan-NIZK 路线**：证明者快 1.4–1.7 倍，验证时间和 BP 相同，但证明大 10 倍（约 12.4KB）。
+
+两套曲线参数：保守组（签名用 NIST P-256、证明用 T-256 曲线链）和性能组（Pasta 曲线 Pallas/Vesta，Zcash 也在用的选型，并行 MSM 快 1.2–1.7 倍）。
+
+表 2 的关键数字（P-256 组 / Vesta 组，字节数为 P-256 组）：
+
+| 操作 | P-256 | Vesta | 大小 |
+|---|---|---|---|
+| 发行：用户请求 | 1.04ms | 1.07ms | 140B |
+| 发行：签名者 | 0.93ms | 0.77ms | 76B |
+| 发行：用户收尾 | 0.72ms | 0.61ms | — |
+| 出示签名（BP）| 503.58ms | 342.84ms | **1349B** |
+| 验证出示（BP）| 91.47ms | 72.61ms | — |
+| 出示签名（Spartan）| 347.70ms | 196.90ms | 12382B |
+| Scheme 2 发行：用户请求 | 364.46ms | 244.50ms | 16590B |
+| Scheme 2 发行：签名者 | 164.28ms | 126.31ms | 76B |
+
+读法：Scheme 1 的发行轻到可以忽略（毫秒级、百字节级），出示一次约 0.5 秒（BP）或 0.35 秒（Spartan）；Scheme 2 因为发行时要证 SHA-256 原像（28202 个约束），发行贵两个数量级——这就是"保守假设"的价格。摘要里那句"签名 1349 字节、生成不到 500ms、验证不到 100ms"正是 P-256 加 BP 这组数字。有意思的工程结论：对**签发者视角**（服务器忙、用户闲），BP 版更合适——验证开销两者相当，但带宽省一个数量级；P-256 换成 Vesta，验证只慢 1.25 倍，保守曲线代价很小。
+
+## 相关工作对比
+
+- **盲 RSA（RFC 9474）**：工业界现状，轮最优但 RSA 密钥大、慢。本文是第一个在"无配对椭圆曲线"这条赛道上把轮最优做到实用的，可以视为盲 RSA 的直接替代候选。
+- **CTZ（Crypto'24，CDH 假设）**：无配对盲签名的上一代标杆，但签名巨大；**KRW24（Asiacrypt'24）** 把它压缩到 224 字节、通信降 10 倍以上，假设却是 DDH；**KNR24（Crypto'24）** 用 strong RSA 假设做到 4.28KB 签名——都不轮最优。本文的 1349 字节签名在"轮最优"这个约束下是首次可接受。
+- **FW24**：思路最接近（签发时也用 zkSNARK、归约到普通 Schnorr），但 SNARK 是配对系的 Groth16/Plonk，secp256k1 加 SHA-256 实例化要**上百万约束**、证明几十秒到几分钟，且只有计算盲性。本文全程离散对数假设、无需可信 setup（BP/Spartan 都是透明的）。
+- **BHKR26（Asiacrypt 2025）**：紧安全的无配对盲签名（10 个群元加 29 个 $\mathbb{Z}_p$ 元），但三轮。本文和它的取舍正交：一个要"紧"，一个要"轮最优"。
+- **Snowblind（Crypto'23）**：门限盲签名，同团队（Tessaro 参与）的前作，解决的是"分散签名密钥"的另一个维度。
+
+## 局限与开放问题
+
+- **预印本状态**：ePrint 2026/091，目前是预印本，未经过顶会同行评审（不过同作者的两个相关结果已被 Crypto 2026 接收）。
+- **证明模型**：ROM 加部分 AGM（只对第二个群 $G'$），不是标准模型；后量子不安全（纯离散对数）。
+- **出示成本**：每次出示签名都要算一个 SNARK（约 0.5 秒证明者时间），比"出示一个普通签名"贵一个量级——这是 Fischlin 范式的结构性代价，高频出示场景要掂量。
+- **Scheme 2 的发行税**：SHA-256 原像证明让发行贵了两个数量级（16590 字节、364ms），想要保守假设就得付这笔钱。
+- **Scheme 3 未实测**：匿名凭证变体只给了构造和证明，没有 benchmark，多属性场景的实际开销未知。
+- **$\mathrm{To}_{\mathbb{Z}_p}$ 的非黑盒依赖**：不可能性结果说了这是必需的，但它也意味着方案和具体曲线/编码绑得更紧，换曲线要重新审视。
+
+## 一点思考
+
+这篇论文最值得记住的不是某个定理，而是它**选对了战场**：盲签名的落地瓶颈从来不是"签名再小 100 字节"，而是"三轮变两轮"——轮最优消掉的是签名者的状态、DoS 面和整整一类实现灾难，这是部署方真正愿意买单的东西。明确判断：**在"无配对、两轮、无需可信 setup、有开源实现"这个组合下，本文是目前唯一的选择；匿名凭证（Scheme 3）是它最有想象力的落点**——一张凭证无限次不可链接出示、还能选择性披露属性，正好卡在"合规又要隐私"的真实需求上。但它离替换盲 RSA 还有两道坎：出示侧 0.5 秒的证明者成本，以及预印本尚未经过同行评审。
+
+## 原文链接
+
+- ePrint 全文：https://eprint.iacr.org/2026/091
+- 实现代码：https://github.com/zaverucha/signature-proof
+- IACR 新闻页：https://iacr.org/news/item/27497
