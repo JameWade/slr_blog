@@ -1,7 +1,7 @@
 ---
 import AboutLayout from "@/layouts/AboutLayout.astro";
 import { SITE } from "@/config";
-import { FRIEND_LINKS as LINKS } from "@/data/links";
+import { FRIEND_LINKS as LINKS, UNION_LINKS as UNIONS } from "@/data/links";
 ---
 
 <AboutLayout frontmatter={{ title: "友链" }}>
@@ -46,6 +46,44 @@ import { FRIEND_LINKS as LINKS } from "@/data/links";
         </div>
       </section>
 
+      <section class="w-full min-w-0">
+        <h2 class="mb-2 text-xl font-semibold tracking-wide">博客联盟</h2>
+        <p class="mb-6 text-sm text-app-dim">
+          本站已加入的博客联盟，去发现更多中文独立博客。
+        </p>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {UNIONS.map(link => (
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              class="group flex items-center gap-4 rounded-xl border border-app-border/60 bg-app/30 p-4 transition-colors hover:border-accent/50 hover:bg-app/50"
+            >
+              {link.avatar ? (
+                <img
+                  src={link.avatar}
+                  alt={link.name}
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  class="h-12 w-12 shrink-0 rounded-full border border-app-border/60 bg-app object-cover"
+                />
+              ) : (
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-app-border/60 bg-accent/10 text-lg font-semibold text-accent">
+                  {link.name.charAt(0)}
+                </div>
+              )}
+              <div class="min-w-0">
+                <div class="truncate font-medium group-hover:text-accent">
+                  {link.name}
+                </div>
+                <div class="mt-0.5 line-clamp-2 text-sm text-app-dim">
+                  {link.intro}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
       <section class="w-full min-w-0 rounded-xl border border-app-border/60 bg-app/30 p-4">
         <h2 class="mb-3 text-xl font-semibold tracking-wide">互换友链</h2>
         <div class="space-y-3 text-[15px] leading-7 text-app-dim">

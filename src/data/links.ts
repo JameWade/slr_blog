@@ -85,3 +85,13 @@ export const FRIEND_LINKS: FriendLink[] = [
     avatar: "https://tu.pasule.com/file/wallpaper/1784014500478.png",
   },
 ];
+
+// 博客联盟（2026-10-23 加入申请）
+export const UNION_LINKS: FriendLink[] = [
+  {
+    name: "博客大联盟",
+    url: "https://bo.ke/",
+    intro: "发现更多中文独立博客",
+    avatar: "https://bo.ke/assets/mark-dark.svg",
+  },
+];
