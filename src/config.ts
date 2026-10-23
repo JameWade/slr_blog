@@ -3,7 +3,7 @@ export const SITE = {
   author: "zkslr",
   profile: "https://github.com/JameWade",
   desc: "水良人的个人博客，记录区块链、密码学与 AI 的学习笔记",
-  title: "水良人的BLOG",
+  title: "应时钓秋水",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
