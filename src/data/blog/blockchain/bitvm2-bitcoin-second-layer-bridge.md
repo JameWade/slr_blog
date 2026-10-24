@@ -64,7 +64,7 @@ flowchart TD
     B -- 有 --> D[运营商发布 Assert<br/>公布 z0..zk + Lamport 签名]
     D --> E{挑战期 ΔA 内<br/>有人 Disprove?}
     E -- 无 --> F[Payout<br/>运营商取回押金]
-    E -- 有 --> G[挑战者链上重算 fi<br/>证明 zi ≠ fi_zi-1]
+    E -- 有 --> G[挑战者链上重算第 i 个子程序<br/>证明中间状态 zi 撒谎]
     G --> H[运营商押金部分销毁 b<br/>挑战者获得 a = d - b]
 ```
 
