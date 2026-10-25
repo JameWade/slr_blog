@@ -18,7 +18,7 @@ description: HPI 团队在 ASIACRYPT 2026 提出 IHBBSτ：首个基于标准 BB
 
 - **标题**：Constant-Size Issuer Hiding for BBS Credentials via Randomizable Keys
 - **作者**：Andrea Flamini、Karla Friedrichs、Anja Lehmann（Hasso Plattner Institute, University of Potsdam, Germany）
-- **会议**：ASIACRYPT 2026（已接收）；preprint 存档于 ePrint 2026/369
+- **会议**：ASIACRYPT 2026（已接收）；preprint 存档于 ePrint 2026/369（2026-02-23 收录，2026-09-13 修订，CC BY 许可）
 - **原文链接**：https://eprint.iacr.org/2026/369
 
 ## 背景
