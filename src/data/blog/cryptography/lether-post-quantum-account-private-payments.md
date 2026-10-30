@@ -102,4 +102,4 @@ Lether 最值得肯定的不是某一个数字，而是它把「后量子账户�
 ## 原文链接
 
 - 论文原文：https://eprint.iacr.org/2026/076
-- 实现 artifact（论文脚注）：https://github.com/LetherSub/Letherartifact
+- 实现 artifact：https://github.com/dingdangdangwhx/Lether-artifact
